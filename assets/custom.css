@@ -1,0 +1,41 @@
+/* Custom header and footer styles */
+.md-footer {
+  background: #222;
+  color: #fff;
+}
+
+/* Highlight code block on click */
+code.highlighted {
+  background: #ffe082 !important;
+  color: #222 !important;
+}
+
+/* Card container and individual card styles */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.card {
+  background: #f5f7fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 200px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #3f51b5;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(60, 60, 60, 0.2);
+}
