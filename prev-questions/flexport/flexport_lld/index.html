@@ -1,0 +1,2341 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ashok-ga.github.io/ds-algo/prev-questions/flexport/flexport_lld/">
+      
+      
+        <link rel="prev" href="../flexport_dsa/">
+      
+      
+        <link rel="next" href="../flexport_hld/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>flexport-lld - DSA & Algo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#logistics-flavored-flexport-y-lld-problems-detailed-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="DSA &amp; Algo" class="md-header__button md-logo" aria-label="DSA & Algo" data-md-component="logo">
+      
+  <img src="../../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DSA & Algo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              flexport-lld
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ashok-ga/ds-algo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ashok-ga/ds-algo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../topics/arrays/" class="md-tabs__link">
+          
+  
+  
+  Topics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../interview/coding_patterns/" class="md-tabs__link">
+          
+  
+  
+  Interview Prep
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../assets/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Assets
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Prev Questions
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../projects/" class="md-tabs__link">
+          
+  
+  
+  Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="DSA &amp; Algo" class="md-nav__button md-logo" aria-label="DSA & Algo" data-md-component="logo">
+      
+  <img src="../../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    DSA & Algo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ashok-ga/ds-algo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ashok-ga/ds-algo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Topics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Topics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../topics/arrays/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arrays
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../topics/linked_lists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linked Lists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../topics/trees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Trees
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../topics/graphs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Graphs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Interview Prep
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Interview Prep
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interview/coding_patterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Webhooks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../assets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Prev Questions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Prev Questions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Flexport
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Flexport
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flexport/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    flexport-1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flexport2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    flexport-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flexport3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    flexport-3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flexport4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    flexport-4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flexport_dsa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    flexport-dsa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    flexport-lld
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    flexport-lld
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-shipment-tracking-service-per-container-per-leg" class="md-nav__link">
+    <span class="md-ellipsis">
+      1) Shipment Tracking Service (per-container &amp; per-leg)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1) Shipment Tracking Service (per-container &amp; per-leg)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      APIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Write Path
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage Schemas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concurrency-idempotency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concurrency &amp; Idempotency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edge-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edge Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale-knobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scale Knobs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-document-store-with-versioning-redaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      2) Document Store with Versioning &amp; Redaction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2) Document Store with Versioning &amp; Redaction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-scope_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entities_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apis_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      APIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idempotency-dedup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Idempotency &amp; Dedup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redaction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-booking-capacity-planner" class="md-nav__link">
+    <span class="md-ellipsis">
+      3) Booking &amp; Capacity Planner
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3) Booking &amp; Capacity Planner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-scope_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entities_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apis_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      APIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage &amp; Consistency
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hs-code-classifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      4) HS Code Classifier
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) HS Code Classifier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-scope_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entities_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apis_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      APIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-milestone-sla-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      5) Milestone SLA Monitor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5) Milestone SLA Monitor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-scope_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entities_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-customs-task-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      6) Customs Task Queue
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6) Customs Task Queue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-scope_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entities_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-rate-quote-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      7) Rate &amp; Quote Engine
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7) Rate &amp; Quote Engine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-scope_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entities_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-multi-stop-route-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      8) Multi-stop Route Builder
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8) Multi-stop Route Builder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-scope_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entities_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flexport_hld/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    flexport-hld
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Rubrik India
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Rubrik India
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rubrik/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rubrik/rubrik1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    rubrik-1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rubrik/rubrik2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    rubrik-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rubrik/rubrik3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    rubrik-3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projects/projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Ideas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/ashok-ga/ds-algo/edit/master/docs/prev-questions/flexport/flexport_lld.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="logistics-flavored-flexport-y-lld-problems-detailed-guide">Logistics-Flavored (Flexport-y) LLD Problems — Detailed Guide<a class="headerlink" href="#logistics-flavored-flexport-y-lld-problems-detailed-guide" title="Permanent link">&para;</a></h1>
+<h2 id="1-shipment-tracking-service-per-container-per-leg">1) Shipment Tracking Service (per-container &amp; per-leg)<a class="headerlink" href="#1-shipment-tracking-service-per-container-per-leg" title="Permanent link">&para;</a></h2>
+<h3 id="goal">Goal<a class="headerlink" href="#goal" title="Permanent link">&para;</a></h3>
+<p>Ingest shipment <strong>Events</strong> (ARRIVED, DEPARTED, CUSTOMS_CLEARANCE, DELAY…), keep a canonical <code>current_status</code>, serve timelines and active shipments by port.</p>
+<h3 id="functional-scope">Functional Scope<a class="headerlink" href="#functional-scope" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>ingestEvent(event)</code> idempotently applies events (out-of-order allowed).</li>
+<li><code>getCurrentStatus(shipmentId)</code>: last known status &amp; location.</li>
+<li><code>getTimeline(shipmentId)</code>: ordered list of events (with sources).</li>
+<li><code>getActiveShipments(portCode)</code>: shipments currently at/heading to a port.</li>
+</ul>
+<h3 id="entities">Entities<a class="headerlink" href="#entities" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Shipment { id, containers[], legs[], currentStatus }</code></li>
+<li><code>Container { id, owner, sealNo, … }</code></li>
+<li><code>Leg { id, mode(SEA/AIR/TRUCK), fromPort, toPort, plannedETD, plannedETA, actualDepartedAt?, actualArrivedAt? }</code></li>
+<li><code>Event { idempotencyKey, shipmentId, containerId?, legId?, type, ts, location, source, payload }</code></li>
+<li><code>StatusAggregator</code> (domain service)</li>
+</ul>
+<h3 id="apis">APIs<a class="headerlink" href="#apis" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">TrackingService</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">ingestEvent</span><span class="p">(</span><span class="n">Event</span><span class="w"> </span><span class="n">e</span><span class="p">);</span><span class="w">         </span><span class="c1">// idempotent</span>
+<span class="w">  </span><span class="n">CurrentStatus</span><span class="w"> </span><span class="nf">getCurrentStatus</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">shipmentId</span><span class="p">);</span>
+<span class="w">  </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Event</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getTimeline</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">shipmentId</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">limit</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">afterCursor</span><span class="p">);</span>
+<span class="w">  </span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getActiveShipments</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">portCode</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">limit</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">afterCursor</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="write-path">Write Path<a class="headerlink" href="#write-path" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Dedup</strong> by <code>(idempotencyKey)</code> → ignore if seen.</li>
+<li><strong>Persist raw event</strong> (append-only).</li>
+<li><strong>Project</strong>: recompute affected leg/container/shipment projections.</li>
+<li><strong>Indexes</strong>: maintain <code>shipment_current_status</code>, <code>shipment_at_port:{port}</code> sets.</li>
+</ol>
+<h3 id="storage-schemas">Storage Schemas<a class="headerlink" href="#storage-schemas" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>events(shipment_id, ts, event_id, type, source, leg_id, container_id, payload_json, idem_key UNIQUE)</code></li>
+<li><code>shipment_projection(...)</code></li>
+<li><code>leg_projection(...)</code></li>
+</ul>
+<h3 id="concurrency-idempotency">Concurrency &amp; Idempotency<a class="headerlink" href="#concurrency-idempotency" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Unique constraint on <code>idem_key</code>.</li>
+<li>Optimistic locking with <code>version</code>.</li>
+<li>Always derive status from deterministic rules.</li>
+</ul>
+<h3 id="edge-cases">Edge Cases<a class="headerlink" href="#edge-cases" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Duplicate events, missing legId, conflicting events, timezone normalization.</li>
+</ul>
+<h3 id="scale-knobs">Scale Knobs<a class="headerlink" href="#scale-knobs" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Partition <code>events</code> by <code>shipment_id</code>.</li>
+<li>Cache <code>currentStatus</code> in Redis.</li>
+<li>Stream processing via Kafka.</li>
+</ul>
+<hr />
+<h2 id="2-document-store-with-versioning-redaction">2) Document Store with Versioning &amp; Redaction<a class="headerlink" href="#2-document-store-with-versioning-redaction" title="Permanent link">&para;</a></h2>
+<h3 id="goal_1">Goal<a class="headerlink" href="#goal_1" title="Permanent link">&para;</a></h3>
+<p>Immutable versions of documents, with redaction overlays.</p>
+<h3 id="functional-scope_1">Functional Scope<a class="headerlink" href="#functional-scope_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>uploadNew(docId, bytes, meta)</code></li>
+<li><code>getLatest(docId)</code> / <code>getAtVersion(docId, versionId)</code></li>
+<li><code>applyRedaction(docId, versionId, rules)</code></li>
+</ul>
+<h3 id="entities_1">Entities<a class="headerlink" href="#entities_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Document</code></li>
+<li><code>Version</code></li>
+<li><code>RedactionRule</code></li>
+</ul>
+<h3 id="apis_1">APIs<a class="headerlink" href="#apis_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">DocService</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Version</span><span class="w"> </span><span class="nf">uploadNew</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">docId</span><span class="p">,</span><span class="w"> </span><span class="n">InputStream</span><span class="w"> </span><span class="n">content</span><span class="p">,</span><span class="w"> </span><span class="n">Meta</span><span class="w"> </span><span class="n">meta</span><span class="p">);</span>
+<span class="w">  </span><span class="n">InputStream</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">docId</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">versionId</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Version</span><span class="w"> </span><span class="nf">applyRedaction</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">docId</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">baseVersionId</span><span class="p">,</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">RedactionRule</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rules</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">label</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Blob store (S3/GCS)</li>
+<li>Metadata DB</li>
+<li>Search index (optional)</li>
+</ul>
+<h3 id="idempotency-dedup">Idempotency &amp; Dedup<a class="headerlink" href="#idempotency-dedup" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Content hash (SHA-256) to detect duplicates.</li>
+</ul>
+<h3 id="redaction">Redaction<a class="headerlink" href="#redaction" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Eager vs Lazy overlay.</li>
+</ul>
+<hr />
+<h2 id="3-booking-capacity-planner">3) Booking &amp; Capacity Planner<a class="headerlink" href="#3-booking-capacity-planner" title="Permanent link">&para;</a></h2>
+<h3 id="goal_2">Goal<a class="headerlink" href="#goal_2" title="Permanent link">&para;</a></h3>
+<p>Consume capacity by leg with priorities; suggest alternate legs if full.</p>
+<h3 id="functional-scope_2">Functional Scope<a class="headerlink" href="#functional-scope_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>book(shipment, legId, qty)</code></li>
+<li><code>release(bookingId)</code></li>
+<li><code>suggestAlternates(shipment)</code></li>
+</ul>
+<h3 id="entities_2">Entities<a class="headerlink" href="#entities_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Leg</code></li>
+<li><code>Booking</code></li>
+<li><code>Allocator</code> strategies</li>
+</ul>
+<h3 id="apis_2">APIs<a class="headerlink" href="#apis_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">BookingService</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">BookingResult</span><span class="w"> </span><span class="nf">book</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">shipmentId</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">legId</span><span class="p">,</span><span class="w"> </span><span class="n">Qty</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="n">Priority</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">idemKey</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">release</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">bookingId</span><span class="p">);</span>
+<span class="w">  </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Leg</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">suggestAlternates</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">shipmentId</span><span class="p">,</span><span class="w"> </span><span class="n">Constraints</span><span class="w"> </span><span class="n">c</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="storage-consistency">Storage &amp; Consistency<a class="headerlink" href="#storage-consistency" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Atomic reserve with optimistic CAS.</li>
+</ul>
+<hr />
+<h2 id="4-hs-code-classifier">4) HS Code Classifier<a class="headerlink" href="#4-hs-code-classifier" title="Permanent link">&para;</a></h2>
+<h3 id="goal_3">Goal<a class="headerlink" href="#goal_3" title="Permanent link">&para;</a></h3>
+<p>Map product attributes to HS code using deterministic rules.</p>
+<h3 id="functional-scope_3">Functional Scope<a class="headerlink" href="#functional-scope_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>classify(product)</code></li>
+</ul>
+<h3 id="entities_3">Entities<a class="headerlink" href="#entities_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Product</code></li>
+<li><code>Rule</code></li>
+<li><code>RuleSet</code></li>
+</ul>
+<h3 id="apis_3">APIs<a class="headerlink" href="#apis_3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">Classifier</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Classification</span><span class="w"> </span><span class="nf">classify</span><span class="p">(</span><span class="n">Product</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">RuleSet</span><span class="w"> </span><span class="n">rs</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="design">Design<a class="headerlink" href="#design" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Predicate DSL compiled to expression tree.</li>
+<li>Evaluation by priority.</li>
+</ul>
+<hr />
+<h2 id="5-milestone-sla-monitor">5) Milestone SLA Monitor<a class="headerlink" href="#5-milestone-sla-monitor" title="Permanent link">&para;</a></h2>
+<h3 id="goal_4">Goal<a class="headerlink" href="#goal_4" title="Permanent link">&para;</a></h3>
+<p>Compare planned vs actual milestones; raise alerts.</p>
+<h3 id="functional-scope_4">Functional Scope<a class="headerlink" href="#functional-scope_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>evaluate(shipmentId)</code></li>
+<li><code>getBreaches(accountId)</code></li>
+</ul>
+<h3 id="entities_4">Entities<a class="headerlink" href="#entities_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>MilestonePlan</code></li>
+<li><code>ActualEvent</code></li>
+<li><code>SlaRule</code></li>
+<li><code>Alert</code></li>
+</ul>
+<hr />
+<h2 id="6-customs-task-queue">6) Customs Task Queue<a class="headerlink" href="#6-customs-task-queue" title="Permanent link">&para;</a></h2>
+<h3 id="goal_5">Goal<a class="headerlink" href="#goal_5" title="Permanent link">&para;</a></h3>
+<p>Human workflow for customs tasks.</p>
+<h3 id="functional-scope_5">Functional Scope<a class="headerlink" href="#functional-scope_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>enqueue(taskType, ref)</code></li>
+<li><code>claim(taskId, userId)</code></li>
+<li><code>complete(taskId)</code></li>
+<li><code>block(taskId, reason)</code></li>
+</ul>
+<h3 id="entities_5">Entities<a class="headerlink" href="#entities_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Task</code></li>
+<li><code>Transition</code></li>
+<li><code>Queue</code></li>
+</ul>
+<hr />
+<h2 id="7-rate-quote-engine">7) Rate &amp; Quote Engine<a class="headerlink" href="#7-rate-quote-engine" title="Permanent link">&para;</a></h2>
+<h3 id="goal_6">Goal<a class="headerlink" href="#goal_6" title="Permanent link">&para;</a></h3>
+<p>Compute a quote with breakdown.</p>
+<h3 id="functional-scope_6">Functional Scope<a class="headerlink" href="#functional-scope_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>quote(request)</code></li>
+</ul>
+<h3 id="entities_6">Entities<a class="headerlink" href="#entities_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>RateCard</code></li>
+<li><code>Surcharge</code></li>
+<li><code>QuoteRequest</code></li>
+<li><code>Quote</code></li>
+</ul>
+<hr />
+<h2 id="8-multi-stop-route-builder">8) Multi-stop Route Builder<a class="headerlink" href="#8-multi-stop-route-builder" title="Permanent link">&para;</a></h2>
+<h3 id="goal_7">Goal<a class="headerlink" href="#goal_7" title="Permanent link">&para;</a></h3>
+<p>Build feasible route under constraints.</p>
+<h3 id="functional-scope_7">Functional Scope<a class="headerlink" href="#functional-scope_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>buildRoute(origin, dest, constraints)</code></li>
+</ul>
+<h3 id="entities_7">Entities<a class="headerlink" href="#entities_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Node</code></li>
+<li><code>Edge</code></li>
+<li><code>Route</code></li>
+<li><code>ConstraintStrategy</code></li>
+</ul>
+<h1 id="classic-lld-flexportrelevant-detailed-guides">Classic LLD (Flexport‑relevant) — Detailed Guides<a class="headerlink" href="#classic-lld-flexportrelevant-detailed-guides" title="Permanent link">&para;</a></h1>
+<p>This pack covers classic interview LLDs with the depth expected for an <strong>SDE‑2</strong> discussion:
+scope, entities, APIs, persistence, concurrency/idempotency, edge cases, scaling knobs, and a tiny sketch.</p>
+<hr />
+<h2 id="9-parking-lot-multitype-pricing-passes">9) Parking Lot (multi‑type, pricing, passes)<a class="headerlink" href="#9-parking-lot-multitype-pricing-passes" title="Permanent link">&para;</a></h2>
+<h3 id="goals">Goals<a class="headerlink" href="#goals" title="Permanent link">&para;</a></h3>
+<p>Manage parking spots for different vehicle types, pricing by duration, validations, and receipts.</p>
+<h3 id="functional-scope_8">Functional Scope<a class="headerlink" href="#functional-scope_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>park(vehicle)</code> → issues <code>Ticket</code> if a compatible <code>Spot</code> is free.</li>
+<li><code>unpark(ticketId)</code> → computes fee and frees spot.</li>
+<li><code>quote(vehicle, durationHint)</code> → estimate cost.</li>
+<li>Optional: <code>reserve(spotId, window)</code>; monthly <code>Pass</code> with discounts.</li>
+</ul>
+<h3 id="entities_8">Entities<a class="headerlink" href="#entities_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Lot { id, name, floors[] }</code></li>
+<li><code>Spot { id, type(COMPACT/REGULAR/LARGE/EV), floor, isOccupied }</code></li>
+<li><code>Vehicle { id, plate, type, isEV }</code></li>
+<li><code>Ticket { id, vehicleId, spotId, entryAt, exitAt?, status }</code></li>
+<li><code>RatePolicy { base, perHour, caps, freeMinutes, evSurcharge }</code></li>
+<li><code>Pass { id, vehicleId, type(MONTHLY/DAILY), discountPct, validFrom, validTo }</code></li>
+</ul>
+<h3 id="apis_4">APIs<a class="headerlink" href="#apis_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">ParkingService</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Ticket</span><span class="w"> </span><span class="nf">park</span><span class="p">(</span><span class="n">Vehicle</span><span class="w"> </span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">idemKey</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Bill</span><span class="w"> </span><span class="nf">unpark</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">ticketId</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Money</span><span class="w"> </span><span class="nf">quote</span><span class="p">(</span><span class="n">Vehicle</span><span class="w"> </span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="n">Duration</span><span class="w"> </span><span class="n">hint</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="storage-indexes">Storage &amp; Indexes<a class="headerlink" href="#storage-indexes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>spot(spot_id PK, type, floor, occupied BOOL, version)</code></li>
+<li><code>ticket(ticket_id PK, vehicle_id, spot_id, entry_at, exit_at, status, pass_id?, idem_key UNIQUE)</code></li>
+<li>Index: <code>(type, occupied=false)</code> for allocation; <code>(vehicle_id, status)</code> for active ticket lookup.</li>
+</ul>
+<h3 id="allocation-concurrencysafe">Allocation (Concurrency‑safe)<a class="headerlink" href="#allocation-concurrencysafe" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Choose eligible spot by type → <strong>CAS</strong>:
+  <div class="highlight"><pre><span></span><code>UPDATE spot SET occupied=true, version=version+1
+WHERE spot_id=? AND occupied=false AND version=?
+</code></pre></div></li>
+<li>Insert <code>ticket</code>. On failure, retry with next spot.</li>
+</ul>
+<h3 id="pricing">Pricing<a class="headerlink" href="#pricing" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Compute duration = <code>exitAt - entryAt</code></li>
+<li><code>fee = base + ceil(hours)*perHour</code>, apply <code>freeMinutes</code>, caps, EV surcharge, and <code>Pass</code> discount; taxes at end.</li>
+</ul>
+<h3 id="edge-cases_1">Edge Cases<a class="headerlink" href="#edge-cases_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Duplicate <code>park</code> retries → idempotency via <code>ticket.idem_key</code>.</li>
+<li>Lost tickets (no id) → match by plate + active ticket.</li>
+<li>EV on non‑EV spot policy; oversized vehicles.</li>
+</ul>
+<h3 id="scale-knobs_1">Scale Knobs<a class="headerlink" href="#scale-knobs_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Shard by lot; cache “free spots by type” in memory and refresh via DB notify.</li>
+<li>Event log for audits.</li>
+</ul>
+<hr />
+<h2 id="10-elevator-system-n-cars-hallcab-calls">10) Elevator System (N cars, hall/cab calls)<a class="headerlink" href="#10-elevator-system-n-cars-hallcab-calls" title="Permanent link">&para;</a></h2>
+<h3 id="goals_1">Goals<a class="headerlink" href="#goals_1" title="Permanent link">&para;</a></h3>
+<p>Dispatch N elevators to minimize wait and travel time; handle hall (up/down) and cab calls.</p>
+<h3 id="functional-scope_9">Functional Scope<a class="headerlink" href="#functional-scope_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>hallCall(floor, dir)</code>; <code>carCall(carId, floor)</code>.</li>
+<li>Scheduler chooses target queues per car.</li>
+<li>Modes: normal, peak (up‑collect), off‑peak, maintenance.</li>
+</ul>
+<h3 id="entities_9">Entities<a class="headerlink" href="#entities_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Elevator { id, currentFloor, direction, doorState, targets: OrderedSet }</code></li>
+<li><code>Controller</code> (holds all elevators)</li>
+<li><code>SchedulerStrategy</code> (interface: <code>assignHallCall(...)</code>)</li>
+<li><code>Request { floor, dir?, ts }</code></li>
+</ul>
+<h3 id="apis_5">APIs<a class="headerlink" href="#apis_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">ElevatorController</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">hallCall</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">floor</span><span class="p">,</span><span class="w"> </span><span class="n">Direction</span><span class="w"> </span><span class="n">dir</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">carCall</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">carId</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">floor</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">tick</span><span class="p">();</span><span class="w"> </span><span class="c1">// simulate time step: move cars, open/close doors</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="scheduling-strategies">Scheduling Strategies<a class="headerlink" href="#scheduling-strategies" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Nearest Car</strong> (distance + direction alignment + load).</li>
+<li><strong>Collective Control</strong> (serve along direction then reverse).</li>
+<li><strong>Peak Mode</strong> heuristics (favor lobby up calls, parking floors at night).</li>
+</ul>
+<h3 id="concurrency">Concurrency<a class="headerlink" href="#concurrency" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Single controller thread updates cars per <code>tick</code>.</li>
+<li>If distributed (per bank), partition floors; communicate via message bus.</li>
+</ul>
+<h3 id="edge-cases_2">Edge Cases<a class="headerlink" href="#edge-cases_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Overloaded car, door obstructed → reinsert floor.</li>
+<li>Maintenance mode removes a car; reassign pending requests.</li>
+</ul>
+<h3 id="observability">Observability<a class="headerlink" href="#observability" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Metrics: avg wait, 95th, energy, door cycles; event logs for replay.</li>
+</ul>
+<hr />
+<h2 id="11-rate-limiter-tokenleaky-bucket">11) Rate Limiter (Token/Leaky Bucket)<a class="headerlink" href="#11-rate-limiter-tokenleaky-bucket" title="Permanent link">&para;</a></h2>
+<h3 id="goals_2">Goals<a class="headerlink" href="#goals_2" title="Permanent link">&para;</a></h3>
+<p>Limit API calls per key with burst handling and precise windows.</p>
+<h3 id="functional-scope_10">Functional Scope<a class="headerlink" href="#functional-scope_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>allow(key)</code> → true/false; optionally remaining tokens &amp; reset time.</li>
+<li>Policies: fixed window, sliding window, <strong>token bucket</strong> (recommended).</li>
+</ul>
+<h3 id="entities_10">Entities<a class="headerlink" href="#entities_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Policy { limit, refillRate, burst }</code></li>
+<li><code>Bucket { tokens, lastRefillTs }</code> (per key)</li>
+</ul>
+<h3 id="apis_6">APIs<a class="headerlink" href="#apis_6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">RateLimiter</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Decision</span><span class="w"> </span><span class="nf">allow</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">Policy</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">nowEpochMs</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="singlenode-design-token-bucket">Single‑node Design (Token Bucket)<a class="headerlink" href="#singlenode-design-token-bucket" title="Permanent link">&para;</a></h3>
+<ul>
+<li>On <code>allow</code>: refill tokens = <code>max(0, (now-lastRefill)/msPerToken)</code>; clamp to <code>burst</code>.</li>
+<li>Accept if <code>tokens&gt;=1</code>, then decrement.</li>
+</ul>
+<h3 id="distributed-design">Distributed Design<a class="headerlink" href="#distributed-design" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Store bucket in Redis:</li>
+<li>Use <strong>Lua script</strong> to refill + check + decrement atomically.</li>
+<li>Keys: <code>bucket:{key}</code> with TTL.</li>
+<li>For sliding window log: ZSET timestamps; trim older than window; count score range.</li>
+</ul>
+<h3 id="edge-cases_3">Edge Cases<a class="headerlink" href="#edge-cases_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Clock skew → rely on Redis time (<code>TIME</code>).</li>
+<li>Hot keys → local warm cache + periodic sync.</li>
+</ul>
+<h3 id="observability_1">Observability<a class="headerlink" href="#observability_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Expose headers: <code>X-RateLimit-Limit</code>, <code>-Remaining</code>, <code>-Reset</code>.</li>
+<li>Counters per policy/key prefix.</li>
+</ul>
+<hr />
+<h2 id="12-inmemory-cache-lru-ttl">12) In‑memory Cache (LRU + TTL)<a class="headerlink" href="#12-inmemory-cache-lru-ttl" title="Permanent link">&para;</a></h2>
+<h3 id="goals_3">Goals<a class="headerlink" href="#goals_3" title="Permanent link">&para;</a></h3>
+<p>Provide O(1) get/put with LRU eviction and per‑entry TTL.</p>
+<h3 id="entities_11">Entities<a class="headerlink" href="#entities_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Entry { key, value, expireAt, prev, next }</code></li>
+<li><code>LRUList { head, tail }</code></li>
+<li><code>Index { Map&lt;K, Entry&gt; }</code></li>
+</ul>
+<h3 id="apis_7">APIs<a class="headerlink" href="#apis_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">Cache</span><span class="o">&lt;</span><span class="n">K</span><span class="p">,</span><span class="n">V</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">V</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="n">K</span><span class="w"> </span><span class="n">key</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">put</span><span class="p">(</span><span class="n">K</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">V</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">Duration</span><span class="w"> </span><span class="n">ttl</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="nf">size</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>HashMap + doubly‑linked list for LRU.</li>
+<li>On <code>get</code>: if expired, evict and return miss; else move to MRU.</li>
+<li>On <code>put</code>: insert/update, prune expired, evict from LRU if over capacity.</li>
+</ul>
+<h3 id="concurrency_1">Concurrency<a class="headerlink" href="#concurrency_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Coarse lock or segment locks (striped) for SDE‑2 level.</li>
+<li>Stats: hit/miss, evictions.</li>
+</ul>
+<h3 id="persistence-options">Persistence Options<a class="headerlink" href="#persistence-options" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Write‑through to backing store; write‑back with flush timer &amp; shutdown hook.</li>
+</ul>
+<h3 id="edge-cases_4">Edge Cases<a class="headerlink" href="#edge-cases_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>ttl=0</code> immediate expiry; huge objects (consider max entry size).</li>
+<li>Clock jumps → prefer monotonic time.</li>
+</ul>
+<hr />
+<h2 id="13-logger-with-appenders">13) Logger with Appenders<a class="headerlink" href="#13-logger-with-appenders" title="Permanent link">&para;</a></h2>
+<h3 id="goals_4">Goals<a class="headerlink" href="#goals_4" title="Permanent link">&para;</a></h3>
+<p>Unified logging with multiple sinks (console/file/HTTP), levels, formatting, async batching.</p>
+<h3 id="entities_12">Entities<a class="headerlink" href="#entities_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Logger { name, level, appenders[] }</code></li>
+<li><code>Appender</code> (ConsoleAppender/FileAppender/HttpAppender)</li>
+<li><code>Formatter</code> (JSON/line)</li>
+<li><code>Record { ts, level, logger, message, context }</code></li>
+</ul>
+<h3 id="apis_8">APIs<a class="headerlink" href="#apis_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">Logger</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">log</span><span class="p">(</span><span class="n">Level</span><span class="w"> </span><span class="n">level</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">msg</span><span class="p">,</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="n">ctx</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">info</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">error</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">msg</span><span class="p">,</span><span class="w"> </span><span class="n">Throwable</span><span class="w"> </span><span class="n">t</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="design_1">Design<a class="headerlink" href="#design_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Synchronous enqueue into a bounded <strong>ring buffer</strong>.</li>
+<li>Background worker flushes to appenders (batch, retry with backoff).</li>
+<li>File rotation (size/time), retention; HTTP adapter with DLQ on persistent failures.</li>
+</ul>
+<h3 id="concurrency-backpressure">Concurrency &amp; Backpressure<a class="headerlink" href="#concurrency-backpressure" title="Permanent link">&para;</a></h3>
+<ul>
+<li>If buffer full: drop or block per policy; expose drop counters.</li>
+<li>Each appender isolated so slow one doesn’t block others.</li>
+</ul>
+<h3 id="edge-cases_5">Edge Cases<a class="headerlink" href="#edge-cases_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Recursive logging in appenders → guard.</li>
+<li>PII redaction in formatter.</li>
+</ul>
+<h3 id="observability_2">Observability<a class="headerlink" href="#observability_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Metrics: records/sec, queue depth, error rate per appender.</li>
+</ul>
+<hr />
+<h2 id="14-notification-service-emailsmspush">14) Notification Service (email/SMS/push)<a class="headerlink" href="#14-notification-service-emailsmspush" title="Permanent link">&para;</a></h2>
+<h3 id="goals_5">Goals<a class="headerlink" href="#goals_5" title="Permanent link">&para;</a></h3>
+<p>Template‑driven notifications across channels with idempotency and retries.</p>
+<h3 id="entities_13">Entities<a class="headerlink" href="#entities_13" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>Template { id, channel, body, vars }</code></li>
+<li><code>Message { id, templateId, to, params, status, idemKey, correlationId }</code></li>
+<li><code>ChannelAdapter</code> (Email/SMS/Push providers)</li>
+<li><code>Preference { userId, channel, enabled, quietHours }</code></li>
+</ul>
+<h3 id="apis_9">APIs<a class="headerlink" href="#apis_9" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">NotificationService</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">String</span><span class="w"> </span><span class="nf">send</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">templateId</span><span class="p">,</span><span class="w"> </span><span class="n">Address</span><span class="w"> </span><span class="n">to</span><span class="p">,</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="n">params</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">idemKey</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">correlationId</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Status</span><span class="w"> </span><span class="nf">getStatus</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">messageId</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="flow">Flow<a class="headerlink" href="#flow" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Validate prefs &amp; quiet hours.</li>
+<li>Render template (engine w/ i18n).</li>
+<li>Persist <code>Message(idemKey UNIQUE)</code>, status=PENDING.</li>
+<li>Enqueue to worker; adapter sends; update status (SENT/FAILED/RETRY/DEAD).</li>
+<li>Retries with exponential backoff; DLQ after N attempts.</li>
+</ol>
+<h3 id="idempotency">Idempotency<a class="headerlink" href="#idempotency" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Reuse existing <code>messageId</code> when <code>idemKey</code> duplicates.</li>
+</ul>
+<h3 id="edge-cases_6">Edge Cases<a class="headerlink" href="#edge-cases_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Provider timeouts; partial outages → circuit breaker &amp; fallback route.</li>
+<li>Per‑tenant rate limits.</li>
+</ul>
+<h3 id="observability_3">Observability<a class="headerlink" href="#observability_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Traces with <code>correlationId</code>; delivery latency histograms.</li>
+</ul>
+<hr />
+<h2 id="15-splitwiselike-expense-splitter">15) Splitwise‑like Expense Splitter<a class="headerlink" href="#15-splitwiselike-expense-splitter" title="Permanent link">&para;</a></h2>
+<h3 id="goals_6">Goals<a class="headerlink" href="#goals_6" title="Permanent link">&para;</a></h3>
+<p>Track expenses in groups and compute minimal settlements.</p>
+<h3 id="functional-scope_11">Functional Scope<a class="headerlink" href="#functional-scope_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>addExpense(groupId, paidBy, amount, splits)</code> (equal/exact/percent)</li>
+<li><code>balances(groupId)</code> → net per user</li>
+<li><code>simplify(groupId)</code> → settlement edges</li>
+</ul>
+<h3 id="entities_14">Entities<a class="headerlink" href="#entities_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>User { id, name }</code></li>
+<li><code>Group { id, members[] }</code></li>
+<li><code>Expense { id, groupId, paidBy, amount, splits[], createdAt }</code></li>
+<li><code>Split { userId, amount }</code></li>
+</ul>
+<h3 id="apis_10">APIs<a class="headerlink" href="#apis_10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span> <span class="nc">ExpenseService</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">addExpense</span><span class="p">(</span><span class="n">ExpenseSpec</span><span class="w"> </span><span class="n">spec</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">idemKey</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">User</span><span class="p">,</span><span class="w"> </span><span class="n">Money</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">balances</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">groupId</span><span class="p">);</span>
+<span class="w">  </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Transfer</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">simplify</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">groupId</span><span class="p">);</span><span class="w"> </span><span class="c1">// min cash flow</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="balances">Balances<a class="headerlink" href="#balances" title="Permanent link">&para;</a></h3>
+<ul>
+<li>For each expense: <code>payer += amount; each split user -= split.amount</code>.</li>
+<li><code>balances = credits - debits</code> per user.</li>
+</ul>
+<h3 id="simplify-min-cash-flow">Simplify (Min Cash Flow)<a class="headerlink" href="#simplify-min-cash-flow" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Greedy:</li>
+<li>Maintain max creditor and max debtor; settle <code>min(credit, |debt|)</code>; repeat until all near zero.</li>
+<li>For exact minimal edges, use flow/min‑cost, but greedy is fine in interviews.</li>
+</ul>
+<h3 id="storage_1">Storage<a class="headerlink" href="#storage_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>expense(id PK, group_id, paid_by, amount, created_at, idem_key UNIQUE)</code></li>
+<li><code>split(expense_id, user_id, amount)</code></li>
+<li>Index by <code>group_id</code>.</li>
+</ul>
+<h3 id="edge-cases_7">Edge Cases<a class="headerlink" href="#edge-cases_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Currency conversion; rounding cents.</li>
+<li>Member leaves group → freeze old balances.</li>
+</ul>
+<h3 id="scale">Scale<a class="headerlink" href="#scale" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Group‑level sharding; precompute balances on write; invalidate cache on changes.</li>
+</ul>
+<hr />
+<h2 id="how-to-present-in-interviews-quick-checklist">How to present in interviews (quick checklist)<a class="headerlink" href="#how-to-present-in-interviews-quick-checklist" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Clarify scope/assumptions &amp; constraints (latency, throughput, durability).</li>
+<li>Name core <strong>entities</strong> &amp; invariants; note <strong>relationships</strong>.</li>
+<li>Define <strong>APIs</strong> (inputs/outputs, idempotency keys, pagination).</li>
+<li>Walk <strong>write path</strong> &amp; <strong>read path</strong>; call out indexes and consistency model.</li>
+<li>Concurrency (locks vs CAS), retries, backpressure, failure modes.</li>
+<li>Extensions/patterns (Strategy, Factory, Observer, State), testing hooks.</li>
+<li>Close with trade‑offs &amp; evolution plan.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ashok-ga/ds-algo" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../../assets/custom.js"></script>
+      
+    
+  </body>
+</html>
