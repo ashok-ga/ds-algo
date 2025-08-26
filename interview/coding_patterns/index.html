@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Curated data structures, algorithms, system design, and real interview question prep.">
+      
       
       
         <link rel="canonical" href="https://ashok-ga.github.io/ds-algo/interview/coding_patterns/">
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sprinklr-webhooks-architecture-registration-and-use-cases" class="md-skip">
+        <a href="#coding-interview-patterns-hub" class="md-skip">
           Skip to content
         </a>
       
@@ -630,54 +632,117 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-are-webhooks" class="md-nav__link">
+  <a href="#sliding-window" class="md-nav__link">
     <span class="md-ellipsis">
-      What are Webhooks?
+      🧩 Sliding Window
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-register-for-a-webhook-in-sprinklr" class="md-nav__link">
+  <a href="#two-pointers" class="md-nav__link">
     <span class="md-ellipsis">
-      How to Register for a Webhook in Sprinklr
+      🪜 Two Pointers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sprinklr-webhook-backend-architecture" class="md-nav__link">
+  <a href="#fast-slow-pointers" class="md-nav__link">
     <span class="md-ellipsis">
-      Sprinklr Webhook Backend Architecture
+      🔁 Fast &amp; Slow Pointers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usages-of-sprinklr-webhooks" class="md-nav__link">
+  <a href="#prefix-difference-arrays" class="md-nav__link">
     <span class="md-ellipsis">
-      Usages of Sprinklr Webhooks
+      🧮 Prefix / Difference Arrays
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-use-webhooks" class="md-nav__link">
+  <a href="#hash-map-frequency-index-maps" class="md-nav__link">
     <span class="md-ellipsis">
-      Why Use Webhooks?
+      🧵 Hash Map (Frequency / Index Maps)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contact-and-acknowledgments" class="md-nav__link">
+  <a href="#stack-patterns" class="md-nav__link">
     <span class="md-ellipsis">
-      Contact and Acknowledgments
+      🔗 Stack Patterns
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion-backtracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧬 Recursion &amp; Backtracking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-traversal-dfsbfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗺️ Graph Traversal (DFS/BFS)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greedy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🥇 Greedy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-search-on-answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧮 Binary Search on Answer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-programming-1-d-2-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧊 Dynamic Programming (1-D &amp; 2-D)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilistic-randomized" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Probabilistic / Randomized
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-selection-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Pattern Selection Checklist
     </span>
   </a>
   
@@ -847,7 +912,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-1
+    🧪 Flexport 1 – Circuit Expressions
     
   </span>
   
@@ -870,7 +935,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-2
+    🔢 Flexport 2 – Even/Odd Ops
     
   </span>
   
@@ -893,7 +958,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-3
+    🔐 Flexport 3 – Auth Tokens
     
   </span>
   
@@ -916,7 +981,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-4
+    ⚙️ Flexport 4 – API Placeholder
     
   </span>
   
@@ -939,7 +1004,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-dsa
+    🧩 Flexport DSA Set
     
   </span>
   
@@ -962,7 +1027,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-lld
+    🧱 Flexport LLD Scenarios
     
   </span>
   
@@ -985,7 +1050,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-hld
+    🏗 Flexport HLD Scenarios
     
   </span>
   
@@ -1084,7 +1149,7 @@
   
   
   <span class="md-ellipsis">
-    rubrik-1
+    📄 Rubrik 1
     
   </span>
   
@@ -1107,7 +1172,7 @@
   
   
   <span class="md-ellipsis">
-    rubrik-2
+    🧠 Rubrik 2 – Rounds
     
   </span>
   
@@ -1130,7 +1195,7 @@
   
   
   <span class="md-ellipsis">
-    rubrik-3
+    🧪 Rubrik 3
     
   </span>
   
@@ -1229,7 +1294,7 @@
   
   
   <span class="md-ellipsis">
-    sumologic-oa
+    🛰 Sumologic OA Problems
     
   </span>
   
@@ -1328,7 +1393,7 @@
   
   
   <span class="md-ellipsis">
-    amazon-oa
+    🚀 Amazon OA Problem Set
     
   </span>
   
@@ -1351,7 +1416,7 @@
   
   
   <span class="md-ellipsis">
-    amazon-assessment-answers
+    🧭 Amazon Assessment Answers
     
   </span>
   
@@ -1491,7 +1556,7 @@
 
 
   
-    <a href="https://github.com/ashok-ga/ds-algo/edit/master/docs/interview/coding_patterns.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/ashok-ga/ds-algo/edit/main/docs/interview/coding_patterns.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1499,116 +1564,170 @@
   
 
 
-<h1 id="sprinklr-webhooks-architecture-registration-and-use-cases">Sprinklr Webhooks: Architecture, Registration, and Use Cases<a class="headerlink" href="#sprinklr-webhooks-architecture-registration-and-use-cases" title="Permanent link">&para;</a></h1>
-<h2 id="what-are-webhooks">What are Webhooks?<a class="headerlink" href="#what-are-webhooks" title="Permanent link">&para;</a></h2>
-<p><strong>Webhooks</strong> are a combination of ‘web’ (HTTP-based communication) and the programming concept of ‘hooking’—allowing apps to intercept or respond to specific events.<br />
-Webhooks let a source system <strong>notify a destination system</strong> in real time when an event occurs, by sending a HTTP request with relevant data (payload) to a registered endpoint.</p>
+<h1 id="coding-interview-patterns-hub">Coding Interview Patterns Hub<a class="headerlink" href="#coding-interview-patterns-hub" title="Permanent link">&para;</a></h1>
+<p>Master high-leverage algorithmic patterns. Each pattern includes: when to use, template, pitfalls, and a drill list.</p>
 <hr />
-<h2 id="how-to-register-for-a-webhook-in-sprinklr">How to Register for a Webhook in Sprinklr<a class="headerlink" href="#how-to-register-for-a-webhook-in-sprinklr" title="Permanent link">&para;</a></h2>
-<p>To register a webhook, the client provides:</p>
-<ul>
-<li>
-<p><strong>Callback URL</strong>:<br />
-  The endpoint where event notifications (API calls with payloads) will be sent.</p>
-</li>
-<li>
-<p><strong>Authentication Type</strong>:<br />
-  For client-side verification of webhook source. Supported methods:</p>
-</li>
-<li>Public URL</li>
-<li>Pre-shared key</li>
-<li>Basic Auth</li>
-<li>
-<p>OAuth2.0</p>
-</li>
-<li>
-<p><strong>Subscription</strong>:<br />
-  Defines which change events the client wants to receive (e.g., case, message, comment, user updates).<br />
-  Conditional subscriptions are supported. For example:  </p>
-</li>
-<li>
-<p>Subscribe only when the <em>case status</em> changes—other case update events are filtered out.</p>
-</li>
-<li>
-<p><strong>Proxy Servers</strong>:<br />
-  Webhooks are sent via proxy servers. Clients can whitelist these server IPs.</p>
-</li>
-</ul>
+<h2 id="sliding-window">🧩 Sliding Window<a class="headerlink" href="#sliding-window" title="Permanent link">&para;</a></h2>
+<p>Use for contiguous subarray / substring problems driven by sums, counts, or uniqueness.</p>
+<p>Template (variable size):
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">longest_substring_no_repeat</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+  <span class="n">last</span> <span class="o">=</span> <span class="p">{}</span>
+  <span class="n">left</span> <span class="o">=</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">for</span> <span class="n">right</span><span class="p">,</span><span class="n">ch</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">last</span> <span class="ow">and</span> <span class="n">last</span><span class="p">[</span><span class="n">ch</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">left</span><span class="p">:</span>
+      <span class="n">left</span> <span class="o">=</span> <span class="n">last</span><span class="p">[</span><span class="n">ch</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">last</span><span class="p">[</span><span class="n">ch</span><span class="p">]</span> <span class="o">=</span> <span class="n">right</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span> <span class="n">right</span><span class="o">-</span><span class="n">left</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">ans</span>
+</code></pre></div>
+Pitfalls: forgetting to shrink window correctly when invariant breaks.</p>
 <hr />
-<h2 id="sprinklr-webhook-backend-architecture">Sprinklr Webhook Backend Architecture<a class="headerlink" href="#sprinklr-webhook-backend-architecture" title="Permanent link">&para;</a></h2>
-<p>Sprinklr uses a robust architecture to process and deliver webhooks:</p>
-<ol>
-<li><strong>Entity Update</strong>:<br />
-   The class <code>com.spr.webhooks.dispatcher.client.WebhookDispatcherClientImpl</code> processes updated entities (e.g., cases, messages, users).  </li>
-<li>
-<p>Each update is wrapped in a <code>WebhookPacket</code> and pushed to the Kafka queue:<br />
-<code>spr_webhook_event</code>.</p>
-</li>
-<li>
-<p><strong>Webhook Packet Handling</strong>:<br />
-   The class <code>com.spr.webhooks.dispatcher.standalone.WebhookDispatcherStandaloneComponent</code> handles incoming webhook packets.  </p>
-</li>
-<li>Retrieves relevant webhook subscription.</li>
-<li>Filters out entities that do <strong>not</strong> meet subscription conditions.</li>
-<li>
-<p>Transforms valid packets into <em>business objects</em>—containing only client-relevant, non-secure data.</p>
-</li>
-<li>
-<p><strong>Event Dispatching</strong>:  </p>
-</li>
-<li>The packet and subscription details are encapsulated into a <code>WebhookEvent</code>.</li>
-<li>
-<p>Sent to another Kafka queue: <code>webhook_event_queue</code>.</p>
-</li>
-<li>
-<p><strong>Webhook Delivery</strong>:  </p>
-</li>
-<li>The class <code>com.spr.messageprocessor.listeners.webhook.WebhookEventListener</code> receives the <code>WebhookEvent</code>.</li>
-<li>Depending on authentication type, sends the webhook to the registered callback URL.</li>
-<li>All delivery attempts (success/failure) are tracked in BigQuery.</li>
-</ol>
+<h2 id="two-pointers">🪜 Two Pointers<a class="headerlink" href="#two-pointers" title="Permanent link">&para;</a></h2>
+<p>Array / string traversal from both ends or with fast/slow for merging, dedupe, partition.</p>
+<p>Template (sorted pair sum):
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">two_sum_sorted</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+  <span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
+  <span class="k">while</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">j</span><span class="p">:</span>
+    <span class="n">s</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">s</span><span class="o">==</span><span class="n">target</span><span class="p">:</span> <span class="k">return</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">s</span><span class="o">&lt;</span><span class="n">target</span><span class="p">:</span> <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span> <span class="n">j</span><span class="o">-=</span><span class="mi">1</span>
+  <span class="k">return</span> <span class="kc">None</span>
+</code></pre></div>
+Pitfall: infinite loop if indices not advanced on all branches.</p>
 <hr />
-<h2 id="usages-of-sprinklr-webhooks">Usages of Sprinklr Webhooks<a class="headerlink" href="#usages-of-sprinklr-webhooks" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Volume</strong>:  </li>
-<li>
-<p>Handles ~288 million change events and 22 million webhook consumptions <strong>daily</strong>.</p>
-</li>
-<li>
-<p><strong>CRM Integration</strong>:  </p>
-</li>
-<li>Integrates with systems like Salesforce, Microsoft Dynamics 365, Zendesk, ServiceNow, etc.</li>
-<li>
-<p>Webhooks enable real-time synchronization of case, message, and profile data.</p>
-</li>
-<li>
-<p><strong>Digital Asset Management</strong>:  </p>
-</li>
-<li>Integrates with Aprimo, Adobe Experience Manager (AEM), Bynder, and more.</li>
-<li>
-<p>Webhooks keep assets in sync with Sprinklr.</p>
-</li>
-<li>
-<p><strong>Bot Integrations</strong>:  </p>
-</li>
-<li>
-<p>Third-party bots use the Omnichannel Handover Protocol to receive real-time updates on case/message/conversation state transitions.</p>
-</li>
-<li>
-<p><strong>Editable Payloads</strong>:  </p>
-</li>
-<li>Supports editable webhook payloads for self-serve partners.</li>
-</ul>
+<h2 id="fast-slow-pointers">🔁 Fast &amp; Slow Pointers<a class="headerlink" href="#fast-slow-pointers" title="Permanent link">&para;</a></h2>
+<p>Cycle detection, middle node, duplicate number detection (Floyd), palindrome check.</p>
+<p>Cycle entry (Linked List): see Linked Lists page.</p>
 <hr />
-<h2 id="why-use-webhooks">Why Use Webhooks?<a class="headerlink" href="#why-use-webhooks" title="Permanent link">&para;</a></h2>
-<p>By <strong>triggering real-time updates</strong> for specific events, webhooks improve the efficiency and reliability of data exchange between systems.<br />
-They are a key feature for enabling event-driven, integrated, and automated workflows.</p>
+<h2 id="prefix-difference-arrays">🧮 Prefix / Difference Arrays<a class="headerlink" href="#prefix-difference-arrays" title="Permanent link">&para;</a></h2>
+<p>Range queries, subarray sums, balancing parentheses, difference updates.</p>
+<p>Prefix sum template:
+<div class="highlight"><pre><span></span><code><span class="n">ps</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span> <span class="n">ps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ps</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">x</span><span class="p">)</span>
+<span class="c1"># sum i..j = ps[j+1]-ps[i]</span>
+</code></pre></div>
+Pitfall: off-by-one indices.</p>
 <hr />
-<h2 id="contact-and-acknowledgments">Contact and Acknowledgments<a class="headerlink" href="#contact-and-acknowledgments" title="Permanent link">&para;</a></h2>
-<p>For suggestions or queries, feel free to reach out.<br />
-Thanks to <strong>Apurba Kumar Nath</strong>, <strong>Manish Agarwal</strong>, <strong>Prateek Agrawal</strong>, <strong>Surabhi Prasad</strong>, and <strong>Kartik Shah</strong> for their guidance and support.</p>
+<h2 id="hash-map-frequency-index-maps">🧵 Hash Map (Frequency / Index Maps)<a class="headerlink" href="#hash-map-frequency-index-maps" title="Permanent link">&para;</a></h2>
+<p>Counting, first occurrence, sliding window uniqueness.</p>
+<p>Two sum variant:
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">two_sum</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="n">target</span><span class="p">):</span>
+  <span class="n">pos</span><span class="o">=</span><span class="p">{}</span>
+  <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">target</span><span class="o">-</span><span class="n">x</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">:</span> <span class="k">return</span> <span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="n">target</span><span class="o">-</span><span class="n">x</span><span class="p">],</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">pos</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">=</span><span class="n">i</span>
+</code></pre></div>
+Pitfall: storing duplicates incorrectly (need earliest vs latest index depending on problem).</p>
 <hr />
-<p><em>Based on the internal Sprinklr documentation, 2024.</em></p>
+<h2 id="stack-patterns">🔗 Stack Patterns<a class="headerlink" href="#stack-patterns" title="Permanent link">&para;</a></h2>
+<p>Monotonic stack (next greater, largest rectangle), parentheses validation, evaluation.</p>
+<p>Monotonic increasing example:
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">next_greater</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
+  <span class="n">st</span><span class="o">=</span><span class="p">[];</span> <span class="n">ans</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">st</span> <span class="ow">and</span> <span class="n">nums</span><span class="p">[</span><span class="n">st</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">:</span>
+      <span class="n">ans</span><span class="p">[</span><span class="n">st</span><span class="o">.</span><span class="n">pop</span><span class="p">()]</span> <span class="o">=</span> <span class="n">x</span>
+    <span class="n">st</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">ans</span>
+</code></pre></div>
+Pitfall: forgetting to pop equals when required by spec.</p>
+<hr />
+<h2 id="recursion-backtracking">🧬 Recursion &amp; Backtracking<a class="headerlink" href="#recursion-backtracking" title="Permanent link">&para;</a></h2>
+<p>Permutations, combinations, subsets, N-Queens, partitioning.</p>
+<p>Template:
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">backtrack</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">start</span><span class="p">):</span>
+  <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">path</span><span class="p">[:])</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
+    <span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">backtrack</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">path</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</code></pre></div>
+Pitfall: forgetting to undo state (path.pop()).</p>
+<hr />
+<h2 id="graph-traversal-dfsbfs">🗺️ Graph Traversal (DFS/BFS)<a class="headerlink" href="#graph-traversal-dfsbfs" title="Permanent link">&para;</a></h2>
+<p>See Graphs page. Add memoization for DAG DP.</p>
+<hr />
+<h2 id="greedy">🥇 Greedy<a class="headerlink" href="#greedy" title="Permanent link">&para;</a></h2>
+<p>Local optimal choices → global optimum (interval scheduling, Huffman, coin change (canonical), priority queues for scheduling).</p>
+<p>Checklist: exchange argument? counterexample search.</p>
+<hr />
+<h2 id="binary-search-on-answer">🧮 Binary Search on Answer<a class="headerlink" href="#binary-search-on-answer" title="Permanent link">&para;</a></h2>
+<p>Search feasible minimal / maximal value (capacity, time, threshold).</p>
+<p>Template:
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">binary_search_answer</span><span class="p">(</span><span class="n">lo</span><span class="p">,</span> <span class="n">hi</span><span class="p">,</span> <span class="n">feasible</span><span class="p">):</span>
+  <span class="k">while</span> <span class="n">lo</span> <span class="o">&lt;</span> <span class="n">hi</span><span class="p">:</span>
+    <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">lo</span><span class="o">+</span><span class="n">hi</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
+    <span class="k">if</span> <span class="n">feasible</span><span class="p">(</span><span class="n">mid</span><span class="p">):</span> <span class="n">hi</span><span class="o">=</span><span class="n">mid</span>
+    <span class="k">else</span><span class="p">:</span> <span class="n">lo</span><span class="o">=</span><span class="n">mid</span><span class="o">+</span><span class="mi">1</span>
+  <span class="k">return</span> <span class="n">lo</span>
+</code></pre></div>
+Pitfall: infinite loop with (lo+hi)//2 when lo+1==hi; ensure termination.</p>
+<hr />
+<h2 id="dynamic-programming-1-d-2-d">🧊 Dynamic Programming (1-D &amp; 2-D)<a class="headerlink" href="#dynamic-programming-1-d-2-d" title="Permanent link">&para;</a></h2>
+<p>State definition, transitions, base cases, order, space optimization.</p>
+<p>Knapsack 0/1 (space optimized):
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">knapsack</span><span class="p">(</span><span class="n">W</span><span class="p">,</span> <span class="n">wt</span><span class="p">,</span> <span class="n">val</span><span class="p">):</span>
+  <span class="n">dp</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">W</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">w</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">wt</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">W</span><span class="p">,</span> <span class="n">w</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+      <span class="n">dp</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">c</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="n">c</span><span class="o">-</span><span class="n">w</span><span class="p">]</span><span class="o">+</span><span class="n">val</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+  <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="n">W</span><span class="p">]</span>
+</code></pre></div>
+Pitfall: iterating capacity forward ruins reuse of previous row.</p>
+<hr />
+<h2 id="probabilistic-randomized">🧪 Probabilistic / Randomized<a class="headerlink" href="#probabilistic-randomized" title="Permanent link">&para;</a></h2>
+<p>Reservoir sampling, randomized quickselect, hashing for equality.</p>
+<p>Reservoir sample k=1:
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">reservoir</span><span class="p">(</span><span class="n">stream</span><span class="p">):</span>
+  <span class="kn">import</span> <span class="nn">random</span>
+  <span class="n">pick</span><span class="o">=</span><span class="kc">None</span>
+  <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="n">pick</span><span class="o">=</span><span class="n">x</span>
+  <span class="k">return</span> <span class="n">pick</span>
+</code></pre></div></p>
+<hr />
+<h2 id="pattern-selection-checklist">✅ Pattern Selection Checklist<a class="headerlink" href="#pattern-selection-checklist" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contiguous segment optimize</td>
+<td>Sliding window / prefix</td>
+</tr>
+<tr>
+<td>K-th or threshold minimal</td>
+<td>Binary search on answer / heap</td>
+</tr>
+<tr>
+<td>Enumerate subsets</td>
+<td>Backtracking / bitmask</td>
+</tr>
+<tr>
+<td>Optimal substructure overlapping</td>
+<td>DP</td>
+</tr>
+<tr>
+<td>Real-time running best while scanning</td>
+<td>Greedy / heap</td>
+</tr>
+<tr>
+<td>Graph ordering dependency</td>
+<td>Topological sort</td>
+</tr>
+<tr>
+<td>Repeated range updates</td>
+<td>Difference array / segment tree</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Internalize patterns; then connect new problems to them quickly.</em></p>
 
 
 

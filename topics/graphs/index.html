@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Curated data structures, algorithms, system design, and real interview question prep.">
+      
       
       
         <link rel="canonical" href="https://ashok-ga.github.io/ds-algo/topics/graphs/">
@@ -564,13 +566,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#core-patterns-and-functions" class="md-nav__link">
+  <a href="#at-a-glance" class="md-nav__link">
     <span class="md-ellipsis">
-      🛠️ Core Patterns and Functions
+      At a Glance
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🛠️ Core Patterns and Functions">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-patterns-and-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      �🛠️ Core Patterns and Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="�🛠️ Core Patterns and Functions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -636,6 +647,33 @@
   <a href="#classic-graph-interview-problems" class="md-nav__link">
     <span class="md-ellipsis">
       🧩 Classic Graph Interview Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dijkstra-min-heap" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏱ Dijkstra (Min-Heap)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-pitfalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Common Pitfalls
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interview-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Interview Checklist
     </span>
   </a>
   
@@ -907,7 +945,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-1
+    🧪 Flexport 1 – Circuit Expressions
     
   </span>
   
@@ -930,7 +968,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-2
+    🔢 Flexport 2 – Even/Odd Ops
     
   </span>
   
@@ -953,7 +991,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-3
+    🔐 Flexport 3 – Auth Tokens
     
   </span>
   
@@ -976,7 +1014,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-4
+    ⚙️ Flexport 4 – API Placeholder
     
   </span>
   
@@ -999,7 +1037,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-dsa
+    🧩 Flexport DSA Set
     
   </span>
   
@@ -1022,7 +1060,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-lld
+    🧱 Flexport LLD Scenarios
     
   </span>
   
@@ -1045,7 +1083,7 @@
   
   
   <span class="md-ellipsis">
-    flexport-hld
+    🏗 Flexport HLD Scenarios
     
   </span>
   
@@ -1144,7 +1182,7 @@
   
   
   <span class="md-ellipsis">
-    rubrik-1
+    📄 Rubrik 1
     
   </span>
   
@@ -1167,7 +1205,7 @@
   
   
   <span class="md-ellipsis">
-    rubrik-2
+    🧠 Rubrik 2 – Rounds
     
   </span>
   
@@ -1190,7 +1228,7 @@
   
   
   <span class="md-ellipsis">
-    rubrik-3
+    🧪 Rubrik 3
     
   </span>
   
@@ -1289,7 +1327,7 @@
   
   
   <span class="md-ellipsis">
-    sumologic-oa
+    🛰 Sumologic OA Problems
     
   </span>
   
@@ -1388,7 +1426,7 @@
   
   
   <span class="md-ellipsis">
-    amazon-oa
+    🚀 Amazon OA Problem Set
     
   </span>
   
@@ -1411,7 +1449,7 @@
   
   
   <span class="md-ellipsis">
-    amazon-assessment-answers
+    🧭 Amazon Assessment Answers
     
   </span>
   
@@ -1551,7 +1589,7 @@
 
 
   
-    <a href="https://github.com/ashok-ga/ds-algo/edit/master/docs/topics/graphs.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/ashok-ga/ds-algo/edit/main/docs/topics/graphs.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1574,7 +1612,69 @@
 <li>Minimum Spanning Tree (MST), Disjoint Set</li>
 </ul>
 <hr />
-<h2 id="core-patterns-and-functions">🛠️ Core Patterns and Functions<a class="headerlink" href="#core-patterns-and-functions" title="Permanent link">&para;</a></h2>
+<h2 id="at-a-glance">At a Glance<a class="headerlink" href="#at-a-glance" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Representation</th>
+<th>Memory</th>
+<th>Iterate Neighbors (deg(v)=k)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adjacency List</td>
+<td>O(V+E)</td>
+<td>O(k)</td>
+</tr>
+<tr>
+<td>Adjacency Matrix</td>
+<td>O(V^2)</td>
+<td>O(V)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Typical Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reachability / Connected Components</td>
+<td>DFS / BFS</td>
+</tr>
+<tr>
+<td>Shortest Path (Unweighted)</td>
+<td>BFS</td>
+</tr>
+<tr>
+<td>Shortest Path (Weighted non-negative)</td>
+<td>Dijkstra (heap)</td>
+</tr>
+<tr>
+<td>Cycles (Directed)</td>
+<td>DFS + color / Kahn</td>
+</tr>
+<tr>
+<td>Topological Order</td>
+<td>Kahn / DFS postorder</td>
+</tr>
+<tr>
+<td>MST</td>
+<td>Kruskal (DSU) / Prim</td>
+</tr>
+<tr>
+<td>Bipartite Check</td>
+<td>BFS/DFS coloring</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<h2 id="core-patterns-and-functions">�🛠️ Core Patterns and Functions<a class="headerlink" href="#core-patterns-and-functions" title="Permanent link">&para;</a></h2>
 <h3 id="1-adjacency-list-representation">1. <strong>Adjacency List Representation</strong><a class="headerlink" href="#1-adjacency-list-representation" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="c1">// Graph as adjacency list</span>
 <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">adj</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
@@ -1716,6 +1816,59 @@
 <td>Reconstruct Itinerary</td>
 <td>DFS, Hierholzer</td>
 <td><a href="https://leetcode.com/problems/reconstruct-itinerary/">LeetCode 332</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dijkstra-min-heap">⏱ Dijkstra (Min-Heap)<a class="headerlink" href="#dijkstra-min-heap" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dijkstra</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;&gt;&amp;</span><span class="w"> </span><span class="n">adj</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">src</span><span class="p">){</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">INF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e9</span><span class="p">;</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dist</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">INF</span><span class="p">);</span><span class="w"> </span><span class="n">dist</span><span class="p">[</span><span class="n">src</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="n">P</span><span class="o">=</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">;</span><span class="w"> </span><span class="n">priority_queue</span><span class="o">&lt;</span><span class="n">P</span><span class="p">,</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">greater</span><span class="o">&lt;</span><span class="n">P</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">pq</span><span class="p">;</span><span class="w"> </span><span class="n">pq</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span><span class="n">src</span><span class="p">});</span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">pq</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="p">[</span><span class="n">d</span><span class="p">,</span><span class="n">u</span><span class="p">]</span><span class="o">=</span><span class="n">pq</span><span class="p">.</span><span class="n">top</span><span class="p">();</span><span class="w"> </span><span class="n">pq</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">d</span><span class="o">!=</span><span class="n">dist</span><span class="p">[</span><span class="n">u</span><span class="p">])</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="p">[</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">u</span><span class="p">])</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">dist</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">w</span><span class="p">){</span><span class="w"> </span><span class="n">dist</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="o">=</span><span class="n">d</span><span class="o">+</span><span class="n">w</span><span class="p">;</span><span class="w"> </span><span class="n">pq</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="n">dist</span><span class="p">[</span><span class="n">v</span><span class="p">],</span><span class="w"> </span><span class="n">v</span><span class="p">});</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">dist</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="common-pitfalls">⚠️ Common Pitfalls<a class="headerlink" href="#common-pitfalls" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Re-visiting nodes in Dijkstra when not checking stale heap entries.</li>
+<li>Using DFS for shortest path (unweighted) instead of BFS -&gt; incorrect ordering.</li>
+<li>Forgetting to reset visited for multiple component traversals.</li>
+<li>Confusing directed vs undirected edges in cycle detection.</li>
+<li>Not handling 0-based vs 1-based node indexing consistently.</li>
+</ul>
+<hr />
+<h2 id="interview-checklist">✅ Interview Checklist<a class="headerlink" href="#interview-checklist" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Goal</th>
+<th>Ask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input Form</td>
+<td>Edge list / adjacency / implicit grid?</td>
+</tr>
+<tr>
+<td>Graph Type</td>
+<td>Directed? Weighted? Negative weights?</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Path length only? Actual path? Count of paths?</td>
+</tr>
+<tr>
+<td>Complexity</td>
+<td>Is O(V+E) acceptable? Need optimization?</td>
+</tr>
+<tr>
+<td>Edge Cases</td>
+<td>Disconnected? Self-loops? Parallel edges?</td>
 </tr>
 </tbody>
 </table>

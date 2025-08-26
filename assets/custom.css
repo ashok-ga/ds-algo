@@ -39,3 +39,121 @@ code.highlighted {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(60, 60, 60, 0.2);
 }
+
+/* Responsive adjustments */
+@media (max-width: 680px) {
+  .card { width: 45%; }
+}
+@media (max-width: 480px) {
+  .card { width: 100%; }
+}
+
+/* Gradient header text */
+h1, h2, h3 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+/* Utility spacing */
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mb-0 { margin-bottom: 0; }
+.text-center { text-align: center; }
+
+/* Callout styles */
+.callout {
+  border-left: 4px solid #3f51b5;
+  background: #f0f3fa;
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 4px;
+}
+.callout.warn { border-color: #ffa000; background:#fff8e1; }
+.callout.danger { border-color: #e53935; background:#ffebee; }
+.callout.success { border-color: #43a047; background:#e8f5e9; }
+
+/* Dark mode adjustments (Material theme adds .theme-dark on <html>) */
+html[data-md-color-scheme='slate'] .card { background:#2a2f3a; box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+html[data-md-color-scheme='slate'] .card a { color: #90caf9; }
+html[data-md-color-scheme='slate'] .callout { background:#2d3440; }
+html[data-md-color-scheme='slate'] .callout.warn { background:#3a3422; }
+html[data-md-color-scheme='slate'] .callout.danger { background:#3b2527; }
+html[data-md-color-scheme='slate'] .callout.success { background:#1f3a29; }
+
+/* Smooth fade-in for main content */
+main.md-main__inner { animation: fadeIn 0.3s ease-in; }
+@keyframes fadeIn { from { opacity:0; transform: translateY(6px);} to { opacity:1; transform: translateY(0);} }
+
+/* Interactive code block copy highlight already present; add subtle border */
+pre code { border-radius:6px; border:1px solid #e0e0e0; }
+html[data-md-color-scheme='slate'] pre code { border-color:#424242; }
+
+/* --- Navigation Bar Enhancements --- */
+.md-header {
+  background: linear-gradient(90deg,#1e3a8a,#4338ca,#6d28d9);
+  backdrop-filter: saturate(1.4) blur(4px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+html[data-md-color-scheme='slate'] .md-header {
+  background: linear-gradient(90deg,#0f172a,#1e293b,#334155);
+}
+
+/* Tabs (top-level nav) */
+.md-tabs__link {
+  position: relative;
+  font-weight: 500;
+  letter-spacing: .3px;
+  transition: color .2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.md-tabs__link:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background: #ffca28;
+  border-radius: 2px;
+  transition: all .28s ease;
+  opacity: 0;
+}
+.md-tabs__link:hover:after, .md-tabs__link--active:after {
+  left: 10%;
+  width: 80%;
+  opacity: 1;
+}
+html[data-md-color-scheme='slate'] .md-tabs__link:after { background:#fbbf24; }
+
+/* Left sidebar navigation refinements */
+.md-nav__link { font-weight: 500; }
+.md-nav__link .nav-emoji { margin-right: 4px; }
+.md-nav__item { --nav-indent-size: 0.65rem; }
+.md-nav__item .md-nav__list { margin-left: .35rem; }
+.md-nav__link:hover { color: #283593; }
+html[data-md-color-scheme='slate'] .md-nav__link:hover { color:#90caf9; }
+
+/* Slight badge style for scenario pages */
+.md-nav__link[href*='flexport_dsa'],
+.md-nav__link[href*='flexport_lld'],
+.md-nav__link[href*='flexport_hld'] { font-style: italic; }
+
+/* Scroll shadow indicator under header */
+body.scrolled .md-header { box-shadow: 0 4px 14px rgba(0,0,0,0.4); }
+
+/* Icon / emoji inside nav */
+.nav-emoji { font-size: 1.05em; line-height: 1; display: inline-block; transform: translateY(-1px); }
+.md-tabs__link .nav-emoji { filter: drop-shadow(0 1px 1px rgba(0,0,0,0.25)); }
+html[data-md-color-scheme='slate'] .md-tabs__link .nav-emoji { filter:none; }
+
+/* Improve focus outline for accessibility */
+.md-tabs__link:focus { outline: 2px solid #ffca28; outline-offset: 2px; }
+html[data-md-color-scheme='slate'] .md-tabs__link:focus { outline-color:#fbbf24; }
+
+/* Copy button theming refinement */
+.copy-code-btn { background:#3949ab; color:#fff; border: none; border-radius:4px; cursor:pointer; }
+.copy-code-btn:hover { background:#303f9f; }
+html[data-md-color-scheme='slate'] .copy-code-btn { background:#1e3a8a; }
+html[data-md-color-scheme='slate'] .copy-code-btn:hover { background:#1e40af; }
