@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://ashok-ga.github.io/ds-algo/topics/arrays/">
+        <link rel="canonical" href="https://ashok-ga.github.io/ds-algo/topics/hash_tables_advanced/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../heaps_priority_queues/">
       
       
-        <link rel="next" href="../linked_lists/">
+        <link rel="next" href="../tries_strings/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Arrays - DSA & Algo</title>
+        <title>Hash Tables (Advanced) - DSA & Algo</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#arrays" class="md-skip">
+        <a href="#hash-tables-advanced" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Arrays
+              Hash Tables (Advanced)
             
           </span>
         </div>
@@ -243,7 +243,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../arrays/" class="md-tabs__link">
           
   
   
@@ -455,32 +455,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Arrays
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../arrays/" class="md-nav__link">
         
   
   
@@ -491,167 +469,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#at-a-glance" class="md-nav__link">
-    <span class="md-ellipsis">
-      At a Glance
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      � Key Concepts
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#core-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Core Patterns
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Core Patterns">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-sliding-window" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Sliding Window
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-two-pointers" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Two Pointers
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-prefix-sum" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Prefix Sum
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-hashing-with-arrays" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Hashing with Arrays
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-binary-search" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Binary Search
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-pitfalls" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚠️ Common Pitfalls
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rapid-drill-set-try-in-15-min" class="md-nav__link">
-    <span class="md-ellipsis">
-      🏃 Rapid Drill Set (Try in &lt; 15 min)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interview-checklist" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Interview Checklist
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tips-tricks" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 Tips &amp; Tricks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#array-template-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      📋 Array Template Functions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#further-reading-and-practice" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔗 Further Reading and Practice
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    <span class="md-ellipsis">
-      📚 See Also
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -753,10 +570,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../hash_tables_advanced/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Hash Tables (Advanced)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -767,6 +606,125 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      At a Glance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-hash-example-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Hash Example (C++)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rolling-hash-string-substring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rolling Hash (String Substring)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-uses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns &amp; Uses
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classic-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classic Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lru-cache-skeleton" class="md-nav__link">
+    <span class="md-ellipsis">
+      LRU Cache Skeleton
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pitfalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfalls
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interview-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interview Checklist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See Also
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1974,7 +1932,7 @@
 
 
   
-    <a href="https://github.com/ashok-ga/ds-algo/edit/main/docs/topics/arrays.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/ashok-ga/ds-algo/edit/main/docs/topics/hash_tables_advanced.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1982,8 +1940,8 @@
   
 
 
-<h1 id="arrays">Arrays<a class="headerlink" href="#arrays" title="Permanent link">&para;</a></h1>
-<p>Arrays are contiguous collections of elements, forming the basis for many algorithms and interview questions.</p>
+<h1 id="hash-tables-advanced">Hash Tables (Advanced)<a class="headerlink" href="#hash-tables-advanced" title="Permanent link">&para;</a></h1>
+<p>Hash tables map keys to values with expected O(1) operations. Advanced topics involve collision strategies, custom hashing, load factor tuning, and interview patterns.</p>
 <hr />
 <h2 id="at-a-glance">At a Glance<a class="headerlink" href="#at-a-glance" title="Permanent link">&para;</a></h2>
 <table>
@@ -1997,275 +1955,257 @@
 </thead>
 <tbody>
 <tr>
-<td>Index access</td>
-<td>O(1)</td>
-<td>O(1)</td>
-<td>Direct address computation</td>
-</tr>
-<tr>
-<td>Search (unsorted)</td>
-<td>O(n)</td>
-<td>O(n)</td>
-<td>Linear scan</td>
-</tr>
-<tr>
-<td>Search (sorted, binary)</td>
-<td>O(log n)</td>
-<td>O(log n)</td>
-<td>Requires sorted order</td>
-</tr>
-<tr>
-<td>Insert (end, amortized)</td>
+<td>Insert</td>
 <td>O(1)</td>
 <td>O(n)</td>
-<td>Resize cost occasionally</td>
+<td>Worst from collisions / rehash storm</td>
 </tr>
 <tr>
-<td>Insert (middle)</td>
-<td>O(n)</td>
-<td>O(n)</td>
-<td>Shift right</td>
-</tr>
-<tr>
-<td>Delete (by index)</td>
-<td>O(n)</td>
-<td>O(n)</td>
-<td>Shift left</td>
-</tr>
-<tr>
-<td>Push / Pop (stack usage)</td>
+<td>Find</td>
 <td>O(1)</td>
+<td>O(n)</td>
+<td>Poor hash / adversarial input</td>
+</tr>
+<tr>
+<td>Delete</td>
 <td>O(1)</td>
-<td>End operations</td>
+<td>O(n)</td>
+<td>Need tombstones in open addressing</td>
+</tr>
+<tr>
+<td>Rehash</td>
+<td>O(n)</td>
+<td>O(n)</td>
+<td>Amortized across growth</td>
 </tr>
 </tbody>
 </table>
-<h2 id="key-concepts">� Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Declaration &amp; Initialization</li>
-<li>Traversal (for, while, recursion)</li>
-<li>Insertion &amp; Deletion (at index, head, tail)</li>
-<li>Slicing and Splicing</li>
-<li>Searching (Linear, Binary Search)</li>
-<li>Sorting (built-in, custom)</li>
-<li>Prefix Sums</li>
-<li>Sliding Window</li>
-<li>Two Pointers</li>
-<li>Hashing with Arrays</li>
-<li>In-place Algorithms</li>
-<li>Subarrays, Subsets, and Combinations</li>
+<li>Collision handling: Separate chaining vs open addressing (linear, quadratic, double hashing)</li>
+<li>Load factor (α = n / buckets) and rehash thresholds</li>
+<li>Custom hash for pairs/tuples (C++ <code>struct</code> with <code>operator()</code>)</li>
+<li>Avoiding modulo bias &amp; choosing bucket counts (power of two vs primes)</li>
+<li>Ordered vs unordered maps (BST vs hash)</li>
+<li>Frequency maps, grouping (anagrams), prefix hashing</li>
+<li>Rolling hash (Rabin-Karp) &amp; polynomial hashing for strings</li>
 </ul>
 <hr />
-<h2 id="core-patterns">🛠️ Core Patterns<a class="headerlink" href="#core-patterns" title="Permanent link">&para;</a></h2>
-<h3 id="1-sliding-window">1. <strong>Sliding Window</strong><a class="headerlink" href="#1-sliding-window" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Find subarrays or substrings that match certain properties.</li>
-<li><strong>Problems:</strong> Maximum/Minimum subarray sum, longest substring without repeating characters.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">maxSumSubarray</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">max_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">curr</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<h2 id="custom-hash-example-c">Custom Hash Example (C++)<a class="headerlink" href="#custom-hash-example-c" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">PairHash</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">operator</span><span class="p">()(</span><span class="k">const</span><span class="w"> </span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">p</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// 64-bit mix</span>
+<span class="w">        </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">((</span><span class="kt">uint64_t</span><span class="p">)</span><span class="n">p</span><span class="p">.</span><span class="n">first</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">32</span><span class="p">)</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="kt">uint64_t</span><span class="p">)</span><span class="n">p</span><span class="p">.</span><span class="n">second</span><span class="p">;</span>
+<span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">^=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">33</span><span class="p">);</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mh">0xff51afd7ed558ccdULL</span><span class="p">;</span>
+<span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">^=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">33</span><span class="p">);</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mh">0xc4ceb9fe1a85ec53ULL</span><span class="p">;</span>
+<span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">^=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">33</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="kt">size_t</span><span class="p">)</span><span class="n">x</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
 
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">k</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">curr</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">PairHash</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mp</span><span class="p">;</span>
+</code></pre></div>
+<hr />
+<h2 id="rolling-hash-string-substring">Rolling Hash (String Substring)<a class="headerlink" href="#rolling-hash-string-substring" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1">// Compute rolling hash base B mod M</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pref</span><span class="p">,</span><span class="w"> </span><span class="n">pw</span><span class="p">;</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">build</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">B</span><span class="o">=</span><span class="mi">911382323</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">M</span><span class="o">=</span><span class="mi">972663749</span><span class="p">){</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">pref</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span><span class="w"> </span><span class="n">pw</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="o">++</span><span class="n">i</span><span class="p">){</span>
+<span class="w">        </span><span class="n">pref</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">B</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">M</span><span class="p">;</span>
+<span class="w">        </span><span class="n">pw</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">pw</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">B</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">M</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="n">max_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">curr</span><span class="p">;</span>
-
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">curr</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">k</span><span class="p">];</span>
-<span class="w">        </span><span class="n">max_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">max</span><span class="p">(</span><span class="n">max_sum</span><span class="p">,</span><span class="w"> </span><span class="n">curr</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">max_sum</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="nf">getHash</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">M</span><span class="o">=</span><span class="mi">972663749</span><span class="p">){</span><span class="w"> </span><span class="c1">// [l,r)</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">r</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pref</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">*</span><span class="n">pw</span><span class="p">[</span><span class="n">r</span><span class="o">-</span><span class="n">l</span><span class="p">]</span><span class="o">%</span><span class="n">M</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">M</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">M</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h3 id="2-two-pointers">2. <strong>Two Pointers</strong><a class="headerlink" href="#2-two-pointers" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Used for searching pairs/triplets, reversing, or partitioning.</li>
-<li><strong>Problems:</strong> Pair sum, move zeroes, reverse array in-place.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">twoSumSorted</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">left</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-
-<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">right</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nums</span><span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nums</span><span class="p">[</span><span class="n">right</span><span class="p">];</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">left</span><span class="p">,</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="p">};</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w">  </span><span class="o">++</span><span class="n">left</span><span class="p">;</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="o">--</span><span class="n">right</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">{};</span>
-<span class="p">}</span>
-</code></pre></div>
-<hr />
-<h3 id="3-prefix-sum">3. <strong>Prefix Sum</strong><a class="headerlink" href="#3-prefix-sum" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Precompute cumulative sums to answer range queries in O(1).</li>
-<li><strong>Problems:</strong> Subarray sum equals k, range sum query.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">prefixSums</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">nums</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="cp">## 📖 Key Concepts</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">pref</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pref</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">pref</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<hr />
-<h3 id="4-hashing-with-arrays">4. <strong>Hashing with Arrays</strong><a class="headerlink" href="#4-hashing-with-arrays" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Use hash maps (unordered_map/set) to count frequencies, detect duplicates, or map values.</li>
-<li><strong>Problems:</strong> Two sum, longest consecutive sequence.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="nf">hasDuplicate</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">nums</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">unordered_set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">seen</span><span class="p">;</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">nums</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">seen</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
-<span class="w">        </span><span class="n">seen</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<hr />
-<h3 id="5-binary-search">5. <strong>Binary Search</strong><a class="headerlink" href="#5-binary-search" title="Permanent link">&para;</a></h3>
-<ul>
-<li>For searching in sorted arrays, or to answer "minimum/maximum" problems (search space).</li>
-<li><strong>Problems:</strong> Find element, first/last occurrence, search insert position.</li>
-</ul>
-<p><div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">binarySearch</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">left</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">right</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">right</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">left</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">mid</span><span class="p">;</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w">  </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1">// Reverse in-place (two-pointer)</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">reverse</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">arr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">arr</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">l</span><span class="o">++</span><span class="p">],</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">r</span><span class="o">--</span><span class="p">]);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-
-<span class="c1">// Rotate right by k (three reversals)</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">rotate</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">arr</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">arr</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
-<span class="w">    </span><span class="n">k</span><span class="w"> </span><span class="o">%=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">reverse</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">arr</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">reverse</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">k</span><span class="p">);</span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">reverse</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">arr</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
-<span class="p">}</span>
-</code></pre></div></p>
-<h2 id="common-pitfalls">⚠️ Common Pitfalls<a class="headerlink" href="#common-pitfalls" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Off‑by‑one errors with <code>left &lt;= right</code> vs <code>left &lt; right</code> in binary search.</li>
-<li>Forgetting to handle empty input (<code>n == 0</code>) before accessing <code>nums[0]</code>.</li>
-<li>Using extra arrays when in‑place two‑pointer solution exists (space waste).</li>
-<li>Not normalizing rotation (<code>k %= n</code>).</li>
-<li>Overflow when summing large values (use 64-bit / long long).</li>
-</ul>
-<hr />
-<h2 id="rapid-drill-set-try-in-15-min">🏃 Rapid Drill Set (Try in &lt; 15 min)<a class="headerlink" href="#rapid-drill-set-try-in-15-min" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Reverse array in place.</li>
-<li>Check if array is sorted and rotated.</li>
-<li>Find second largest element (one pass).</li>
-<li>Move all zeroes to end preserving order.</li>
-<li>Longest subarray with sum == K (positive ints).</li>
-<li>Longest subarray with sum == 0 (include negatives).</li>
-<li>Kadane variant returning subarray indices.</li>
-<li>Binary search first and last occurrence.</li>
-<li>Rotate array right by k in O(1) space.</li>
-<li>Merge two sorted arrays without extra space (gap method).</li>
-</ol>
-<hr />
-<h2 id="interview-checklist">✅ Interview Checklist<a class="headerlink" href="#interview-checklist" title="Permanent link">&para;</a></h2>
+<h2 id="patterns-uses">Patterns &amp; Uses<a class="headerlink" href="#patterns-uses" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Item</th>
-<th>Ask Yourself</th>
+<th>Pattern</th>
+<th>Idea</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Constraints</td>
-<td>What are n, value ranges, memory limits?</td>
+<td>Frequency Counting</td>
+<td>Key counts in map</td>
+<td>Valid Anagram</td>
 </tr>
 <tr>
-<td>Patterns</td>
-<td>Sliding window? Two pointers? Prefix? Binary search on answer?</td>
+<td>Grouping by Signature</td>
+<td>Map signature -&gt; list</td>
+<td>Group Anagrams</td>
 </tr>
 <tr>
-<td>Edge Cases</td>
-<td>Empty, single element, all equal, already sorted, negatives?</td>
+<td>Prefix Seen Set</td>
+<td>Detect duplicates or sums</td>
+<td>Two Sum, Subarray sum k</td>
 </tr>
 <tr>
-<td>Complexity</td>
-<td>Time &amp; extra space minimal? Can we optimize?</td>
+<td>Window Counters</td>
+<td>Maintain char freq for window</td>
+<td>Min Window Substring</td>
 </tr>
 <tr>
-<td>Mutability</td>
-<td>Can I reorder / modify input? If not, copy intentionally.</td>
+<td>Pair / State Memo</td>
+<td>DP or BFS visited states</td>
+<td>Word Ladder visited</td>
 </tr>
 <tr>
-<td>Stability</td>
-<td>If sorting, is stable order required?</td>
+<td>Hash + Sorting Hybrid</td>
+<td>Sort buckets by freq</td>
+<td>Top K Frequent</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="tips-tricks">🧠 <strong>Tips &amp; Tricks</strong><a class="headerlink" href="#tips-tricks" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Know your STL algorithms:</strong> (e.g., <code>std::accumulate</code>, <code>std::min_element</code>, <code>std::max_element</code>)</li>
-<li><strong>Always check for empty arrays and edge cases</strong> (one element, all same, all zeros).</li>
-<li><strong>Think about space complexity</strong>: Can you do it in-place?</li>
-<li><strong>Know when to use O(n) vs O(n log n) approaches</strong> (prefix sum vs sorting).</li>
-</ul>
+<h2 id="classic-problems">Classic Problems<a class="headerlink" href="#classic-problems" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Concept</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Two Sum</td>
+<td>Value index map</td>
+<td>https://leetcode.com/problems/two-sum/</td>
+</tr>
+<tr>
+<td>Group Anagrams</td>
+<td>Hash signature</td>
+<td>https://leetcode.com/problems/group-anagrams/</td>
+</tr>
+<tr>
+<td>Subarray Sum Equals K</td>
+<td>Prefix sum map</td>
+<td>https://leetcode.com/problems/subarray-sum-equals-k/</td>
+</tr>
+<tr>
+<td>Longest Consecutive Sequence</td>
+<td>Set presence</td>
+<td>https://leetcode.com/problems/longest-consecutive-sequence/</td>
+</tr>
+<tr>
+<td>LRU Cache</td>
+<td>Ordered hash + list</td>
+<td>https://leetcode.com/problems/lru-cache/</td>
+</tr>
+<tr>
+<td>Randomized Set</td>
+<td>Hash + array</td>
+<td>https://leetcode.com/problems/insert-delete-getrandom-o1/</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="array-template-functions">📋 <strong>Array Template Functions</strong><a class="headerlink" href="#array-template-functions" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1">// Reverse in-place</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">reverse</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">arr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arr</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">right</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">],</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]);</span>
-<span class="w">        </span><span class="o">++</span><span class="n">left</span><span class="p">;</span>
-<span class="w">        </span><span class="o">--</span><span class="n">right</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+<h2 id="lru-cache-skeleton">LRU Cache Skeleton<a class="headerlink" href="#lru-cache-skeleton" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="cp">#pragma once</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
 
-<span class="c1">// Rotate right by k</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">rotate</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">arr</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arr</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
-<span class="w">    </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
-<span class="w">    </span><span class="n">reverse</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">arr</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
-<span class="w">    </span><span class="n">reverse</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">k</span><span class="p">);</span>
-<span class="w">    </span><span class="n">reverse</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">arr</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
-<span class="p">}</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">LRUCache</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">LRUCache</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">capacity</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">cap_</span><span class="p">(</span><span class="n">capacity</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">get</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pos_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">pos_</span><span class="p">.</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
+<span class="w">        </span><span class="n">touch</span><span class="p">(</span><span class="n">it</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">put</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pos_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">pos_</span><span class="p">.</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="o">-&gt;</span><span class="n">second</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
+<span class="w">            </span><span class="n">touch</span><span class="p">(</span><span class="n">it</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">list_</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">cap_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">auto</span><span class="w"> </span><span class="n">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">list_</span><span class="p">.</span><span class="n">back</span><span class="p">();</span>
+<span class="w">                </span><span class="n">pos_</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">last</span><span class="p">.</span><span class="n">first</span><span class="p">);</span>
+<span class="w">                </span><span class="n">list_</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">list_</span><span class="p">.</span><span class="n">emplace_front</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">);</span>
+<span class="w">            </span><span class="n">pos_</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">list_</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">cap_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">list_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;::</span><span class="n">iterator</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pos_</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">touch</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;::</span><span class="n">iterator</span><span class="o">&gt;::</span><span class="n">iterator</span><span class="w"> </span><span class="n">it</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">list_</span><span class="p">.</span><span class="n">splice</span><span class="p">(</span><span class="n">list_</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">list_</span><span class="p">,</span><span class="w"> </span><span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
 </code></pre></div>
 <hr />
-<h2 id="further-reading-and-practice">🔗 <strong>Further Reading and Practice</strong><a class="headerlink" href="#further-reading-and-practice" title="Permanent link">&para;</a></h2>
+<h2 id="pitfalls">Pitfalls<a class="headerlink" href="#pitfalls" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://leetcode.com/explore/learn/card/array-and-string/">Arrays 101 (LeetCode)</a></li>
-<li><a href="https://www.geeksforgeeks.org/array-data-structure/">GeeksForGeeks Array Practice</a></li>
-<li><a href="https://www.interviewbit.com/courses/programming/topics/arrays/">InterviewBit Array Problems</a></li>
-<li><a href="https://leetcode.com/tag/sliding-window/">Pattern: Sliding Window</a></li>
+<li>Using hash where order required (use ordered map or vector sort)</li>
+<li>Ignoring worst-case (adversarial) inputs—could degrade to O(n)</li>
+<li>Poor custom hash causing clustering</li>
+<li>Mutating key content after insertion (breaks invariants)</li>
+<li>Forgetting to reserve buckets for large inserts (rehash storms)</li>
 </ul>
 <hr />
-<h2 id="see-also">📚 <strong>See Also</strong><a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<h2 id="interview-checklist">Interview Checklist<a class="headerlink" href="#interview-checklist" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Consider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key Type</td>
+<td>Need custom hash? Collisions manageable?</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>High load factor increases collisions</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>Need sorted traversal? Choose tree map</td>
+</tr>
+<tr>
+<td>Updates</td>
+<td>Frequent deletes? Strategy (tombstones vs list)</td>
+</tr>
+<tr>
+<td>Concurrency</td>
+<td>Thread-safe? Consider locking / sharding</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="further-reading">Further Reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../linked_lists/">Linked Lists</a></li>
-<li><a href="../trees/">Trees</a></li>
-<li><a href="../../interview/coding_patterns/">Coding Patterns</a></li>
+<li>https://en.cppreference.com/w/cpp/container/unordered_map</li>
+<li>https://stackoverflow.com/questions/311703/what-are-the-advantages-of-a-hash-table-over-a-binary-search-tree</li>
+<li>https://cp-algorithms.com/string/string-hashing.html</li>
 </ul>
 <hr />
-<p><em>Master these array patterns and you’ll ace most coding rounds!</em></p>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../bit_manipulation/">Bit Manipulation</a></li>
+<li><a href="../tries_strings/">Tries &amp; String Algorithms</a></li>
+<li><a href="../advanced_searching/">Advanced Searching</a></li>
+</ul>
+<hr />
+<p><em>Advanced hashing powers high-performance lookups and string algorithms.</em></p>
 
 
 

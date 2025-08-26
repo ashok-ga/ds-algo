@@ -10,28 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://ashok-ga.github.io/ds-algo/prev-questions/flexport/flexport/">
+        <link rel="canonical" href="https://ashok-ga.github.io/ds-algo/topics/union_find_dsu/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../math_number_theory/">
       
       
-        <link rel="next" href="../flexport2/">
+        <link rel="next" href="../segment_fenwick_trees/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Circuit Expressions - DSA & Algo</title>
+        <title>Union-Find (DSU) - DSA & Algo</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/custom.css">
+      <link rel="stylesheet" href="../../assets/custom.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#problem-evaluating-circuit-expressions" class="md-skip">
+        <a href="#union-find-disjoint-set-union" class="md-skip">
           Skip to content
         </a>
       
@@ -92,9 +92,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="DSA &amp; Algo" class="md-header__button md-logo" aria-label="DSA & Algo" data-md-component="logo">
+    <a href="../.." title="DSA &amp; Algo" class="md-header__button md-logo" aria-label="DSA & Algo" data-md-component="logo">
       
-  <img src="../../../assets/images/favicon.png" alt="logo">
+  <img src="../../assets/images/favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Circuit Expressions
+              Union-Find (DSU)
             
           </span>
         </div>
@@ -220,7 +220,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -237,11 +237,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../topics/arrays/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../arrays/" class="md-tabs__link">
           
   
   
@@ -261,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../problems/" class="md-tabs__link">
+        <a href="../../problems/" class="md-tabs__link">
           
   
   
@@ -277,13 +279,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../problems/interviews_timeline/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../problems/interviews_timeline/" class="md-tabs__link">
           
   
   
@@ -303,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../interview/coding_patterns/" class="md-tabs__link">
+        <a href="../../interview/coding_patterns/" class="md-tabs__link">
           
   
   
@@ -323,7 +323,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../projects/" class="md-tabs__link">
+        <a href="../../projects/" class="md-tabs__link">
           
   
   
@@ -359,9 +359,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="DSA &amp; Algo" class="md-nav__button md-logo" aria-label="DSA & Algo" data-md-component="logo">
+    <a href="../.." title="DSA &amp; Algo" class="md-nav__button md-logo" aria-label="DSA & Algo" data-md-component="logo">
       
-  <img src="../../../assets/images/favicon.png" alt="logo">
+  <img src="../../assets/images/favicon.png" alt="logo">
 
     </a>
     DSA & Algo
@@ -388,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -407,28 +407,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -441,7 +444,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Topics
@@ -455,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/arrays/" class="md-nav__link">
+      <a href="../arrays/" class="md-nav__link">
         
   
   
@@ -478,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/linked_lists/" class="md-nav__link">
+      <a href="../linked_lists/" class="md-nav__link">
         
   
   
@@ -501,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/trees/" class="md-nav__link">
+      <a href="../trees/" class="md-nav__link">
         
   
   
@@ -524,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/graphs/" class="md-nav__link">
+      <a href="../graphs/" class="md-nav__link">
         
   
   
@@ -547,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/heaps_priority_queues/" class="md-nav__link">
+      <a href="../heaps_priority_queues/" class="md-nav__link">
         
   
   
@@ -570,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/hash_tables_advanced/" class="md-nav__link">
+      <a href="../hash_tables_advanced/" class="md-nav__link">
         
   
   
@@ -593,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/tries_strings/" class="md-nav__link">
+      <a href="../tries_strings/" class="md-nav__link">
         
   
   
@@ -616,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/dynamic_programming/" class="md-nav__link">
+      <a href="../dynamic_programming/" class="md-nav__link">
         
   
   
@@ -639,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/greedy/" class="md-nav__link">
+      <a href="../greedy/" class="md-nav__link">
         
   
   
@@ -662,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/bit_manipulation/" class="md-nav__link">
+      <a href="../bit_manipulation/" class="md-nav__link">
         
   
   
@@ -685,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/math_number_theory/" class="md-nav__link">
+      <a href="../math_number_theory/" class="md-nav__link">
         
   
   
@@ -705,10 +708,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../topics/union_find_dsu/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Union-Find (DSU)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -719,6 +744,107 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      At a Glance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation (C++)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-uses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns &amp; Uses
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kruskal-skeleton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kruskal Skeleton
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classic-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classic Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pitfalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfalls
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interview-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interview Checklist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See Also
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -731,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/segment_fenwick_trees/" class="md-nav__link">
+      <a href="../segment_fenwick_trees/" class="md-nav__link">
         
   
   
@@ -754,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/advanced_searching/" class="md-nav__link">
+      <a href="../advanced_searching/" class="md-nav__link">
         
   
   
@@ -829,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../problems/" class="md-nav__link">
+      <a href="../../problems/" class="md-nav__link">
         
   
   
@@ -852,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../problems/two-sum/" class="md-nav__link">
+      <a href="../../problems/two-sum/" class="md-nav__link">
         
   
   
@@ -875,7 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../problems/discuss/" class="md-nav__link">
+      <a href="../../problems/discuss/" class="md-nav__link">
         
   
   
@@ -902,31 +1028,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -939,7 +1062,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Prev Questions
@@ -953,7 +1076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../problems/interviews_timeline/" class="md-nav__link">
+      <a href="../../problems/interviews_timeline/" class="md-nav__link">
         
   
   
@@ -976,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../prev-questions/" class="md-nav__link">
         
   
   
@@ -996,31 +1119,28 @@
                 
   
   
-    
   
   
-  
     
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
         
           
-          
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
             
   
   
@@ -1033,7 +1153,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             Flexport
@@ -1047,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../prev-questions/flexport/" class="md-nav__link">
         
   
   
@@ -1067,32 +1187,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Circuit Expressions
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../prev-questions/flexport/flexport/" class="md-nav__link">
         
   
   
@@ -1103,122 +1201,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    <span class="md-ellipsis">
-      📝 Description
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supported-symbols" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔣 Supported Symbols
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#function-signature" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔁 Function Signature
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    <span class="md-ellipsis">
-      📥 Input
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    <span class="md-ellipsis">
-      📤 Output
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constraints" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔒 Constraints
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      📘 Example
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📘 Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#input_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Input
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#output_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#c-solution" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ C++ Solution
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1231,7 +1213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flexport2/" class="md-nav__link">
+      <a href="../../prev-questions/flexport/flexport2/" class="md-nav__link">
         
   
   
@@ -1254,7 +1236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flexport3/" class="md-nav__link">
+      <a href="../../prev-questions/flexport/flexport3/" class="md-nav__link">
         
   
   
@@ -1277,7 +1259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flexport4/" class="md-nav__link">
+      <a href="../../prev-questions/flexport/flexport4/" class="md-nav__link">
         
   
   
@@ -1300,7 +1282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flexport_dsa/" class="md-nav__link">
+      <a href="../../prev-questions/flexport/flexport_dsa/" class="md-nav__link">
         
   
   
@@ -1323,7 +1305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flexport_lld/" class="md-nav__link">
+      <a href="../../prev-questions/flexport/flexport_lld/" class="md-nav__link">
         
   
   
@@ -1346,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flexport_hld/" class="md-nav__link">
+      <a href="../../prev-questions/flexport/flexport_hld/" class="md-nav__link">
         
   
   
@@ -1383,13 +1365,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -1398,7 +1377,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
             
   
   
@@ -1425,7 +1404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../rubrik/" class="md-nav__link">
+      <a href="../../prev-questions/rubrik/" class="md-nav__link">
         
   
   
@@ -1448,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../rubrik/rubrik1/" class="md-nav__link">
+      <a href="../../prev-questions/rubrik/rubrik1/" class="md-nav__link">
         
   
   
@@ -1471,7 +1450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../rubrik/rubrik2/" class="md-nav__link">
+      <a href="../../prev-questions/rubrik/rubrik2/" class="md-nav__link">
         
   
   
@@ -1494,7 +1473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../rubrik/rubrik3/" class="md-nav__link">
+      <a href="../../prev-questions/rubrik/rubrik3/" class="md-nav__link">
         
   
   
@@ -1531,13 +1510,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -1546,7 +1522,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
         
           
-          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
             
   
   
@@ -1573,7 +1549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sumologic/" class="md-nav__link">
+      <a href="../../prev-questions/sumologic/" class="md-nav__link">
         
   
   
@@ -1596,7 +1572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sumologic/sumo-oa/" class="md-nav__link">
+      <a href="../../prev-questions/sumologic/sumo-oa/" class="md-nav__link">
         
   
   
@@ -1633,13 +1609,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -1648,7 +1621,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_6" >
         
           
-          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
             
   
   
@@ -1675,7 +1648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../amazon/" class="md-nav__link">
+      <a href="../../prev-questions/amazon/" class="md-nav__link">
         
   
   
@@ -1698,7 +1671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../amazon/Amazon_OA/" class="md-nav__link">
+      <a href="../../prev-questions/amazon/Amazon_OA/" class="md-nav__link">
         
   
   
@@ -1721,7 +1694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../amazon/Amazon_Assessment_Answers/" class="md-nav__link">
+      <a href="../../prev-questions/amazon/Amazon_Assessment_Answers/" class="md-nav__link">
         
   
   
@@ -1804,7 +1777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/coding_patterns/" class="md-nav__link">
+      <a href="../../interview/coding_patterns/" class="md-nav__link">
         
   
   
@@ -1879,7 +1852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../projects/" class="md-nav__link">
+      <a href="../../projects/" class="md-nav__link">
         
   
   
@@ -1902,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../projects/projects/" class="md-nav__link">
+      <a href="../../projects/projects/" class="md-nav__link">
         
   
   
@@ -1941,7 +1914,7 @@
 
 
   
-    <a href="https://github.com/ashok-ga/ds-algo/edit/main/docs/prev-questions/flexport/flexport.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/ashok-ga/ds-algo/edit/main/docs/topics/union_find_dsu.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1949,132 +1922,222 @@
   
 
 
-<h1 id="problem-evaluating-circuit-expressions">🧠 Problem: Evaluating Circuit Expressions<a class="headerlink" href="#problem-evaluating-circuit-expressions" title="Permanent link">&para;</a></h1>
-<h2 id="description">📝 Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p>You are given a list of logical circuit expressions. Each expression is written in <strong>prefix notation</strong> using only logical operators and constants. You must evaluate each expression and return its result as either <code>1</code> (logical true) or <code>0</code> (logical false).</p>
+<h1 id="union-find-disjoint-set-union">Union-Find (Disjoint Set Union)<a class="headerlink" href="#union-find-disjoint-set-union" title="Permanent link">&para;</a></h1>
+<p>Union-Find maintains a collection of disjoint sets with near constant-time merges and finds. Essential for connectivity, MST, and component tracking.</p>
 <hr />
-<h2 id="supported-symbols">🔣 Supported Symbols<a class="headerlink" href="#supported-symbols" title="Permanent link">&para;</a></h2>
+<h2 id="at-a-glance">At a Glance<a class="headerlink" href="#at-a-glance" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Symbol</th>
-<th>Meaning</th>
+<th>Operation</th>
+<th>Complexity (amortized)</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>[</code></td>
-<td>Start of expression block</td>
+<td>makeSet</td>
+<td>O(n) total</td>
+<td>Initialize parent, rank/size</td>
 </tr>
 <tr>
-<td><code>]</code></td>
-<td>End of expression block</td>
+<td>find</td>
+<td>α(n) ≈ constant</td>
+<td>Path compression</td>
 </tr>
 <tr>
-<td><code>&amp;</code></td>
-<td>Logical AND</td>
-</tr>
-<tr>
-<td><code>|</code></td>
-<td>Logical OR</td>
-</tr>
-<tr>
-<td><code>!</code></td>
-<td>Logical NOT</td>
-</tr>
-<tr>
-<td><code>1</code></td>
-<td>Logical TRUE</td>
-</tr>
-<tr>
-<td><code>0</code></td>
-<td>Logical FALSE</td>
+<td>union</td>
+<td>α(n) ≈ constant</td>
+<td>Union by rank / size</td>
 </tr>
 </tbody>
 </table>
-<p>Each expression may be <strong>deeply nested</strong> and will follow <strong>correct prefix notation</strong> using the brackets <code>[</code> and <code>]</code> to group expressions.</p>
+<p><code>α(n)</code> is the inverse Ackermann function (&lt; 5 for all practical n).</p>
 <hr />
-<h2 id="function-signature">🔁 Function Signature<a class="headerlink" href="#function-signature" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">circuitsOutput</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">circuitsExpression</span><span class="p">);</span>
-</code></pre></div>
-<hr />
-<h2 id="input">📥 Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>circuitsExpression</code>: A list of strings, where each string is a valid circuit expression.</li>
-<li>Each expression may contain up to <code>10^6</code> characters.</li>
-</ul>
-<hr />
-<h2 id="output">📤 Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Return a list of integers where each value is either <code>1</code> or <code>0</code>, representing the result of evaluating each expression.</li>
-</ul>
-<hr />
-<h2 id="constraints">🔒 Constraints<a class="headerlink" href="#constraints" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>1 ≤ circuitsExpression.size() ≤ 10</code></li>
-<li>Each expression is syntactically valid.</li>
-<li>Only symbols: <code>0</code>, <code>1</code>, <code>[</code>, <code>]</code>, <code>&amp;</code>, <code>|</code>, <code>!</code>, and commas (<code>,</code>) for separation.</li>
-</ul>
-<hr />
-<h2 id="example">📘 Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<h3 id="input_1">Input<a class="headerlink" href="#input_1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="s">&quot;[&amp;, [&amp;, 1, [!, 0]], [|, [|, 1, 0], [!, 1]]]&quot;</span>
-<span class="p">]</span>
-</code></pre></div>
-<h3 id="output_1">Output<a class="headerlink" href="#output_1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>[1]
-</code></pre></div>
-<hr />
-<h2 id="c-solution">✅ C++ Solution<a class="headerlink" href="#c-solution" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
-<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+<h2 id="implementation-c">Implementation (C++)<a class="headerlink" href="#implementation-c" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="cp">#pragma once</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">eval</span><span class="p">(</span><span class="n">queue</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">q</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">t</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;[&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">op</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-<span class="w">        </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">args</span><span class="p">;</span>
-<span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;]&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;[&quot;</span><span class="p">)</span><span class="w"> </span><span class="n">args</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">eval</span><span class="p">(</span><span class="n">q</span><span class="p">));</span>
-<span class="w">            </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="n">string</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                    </span><span class="kt">int</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;[&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">eval</span><span class="p">(</span><span class="n">q</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">(),</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="p">);</span>
-<span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;[&quot;</span><span class="p">)</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-<span class="w">                    </span><span class="n">args</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="o">!</span><span class="n">v</span><span class="p">);</span>
-<span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="n">args</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="p">);</span>
-<span class="w">            </span><span class="p">}</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span><span class="w"> </span><span class="c1">// pop &quot;]&quot;</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">op</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;&amp;&quot;</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">all_of</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">args</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="p">[](</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">){</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="p">});</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">op</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;|&quot;</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">any_of</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">args</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="p">[](</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">){</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="p">});</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">op</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="o">!</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">DSU</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">DSU</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">DSU</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">init</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">init</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">parent_</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+<span class="w">        </span><span class="n">size_</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">iota</span><span class="p">(</span><span class="n">parent_</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">parent_</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">        </span><span class="n">comps_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="p">;</span>
-<span class="p">}</span>
 
-<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">circuitsOutput</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">exprs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">out</span><span class="p">;</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;</span><span class="n">s</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">exprs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">queue</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">q</span><span class="p">;</span>
-<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isspace</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;,&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span>
-<span class="w">            </span><span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">string</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]));</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="n">out</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">eval</span><span class="p">(</span><span class="n">q</span><span class="p">));</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">parent_</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">parent_</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="n">parent_</span><span class="p">[</span><span class="n">x</span><span class="p">]);</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">out</span><span class="p">;</span>
-<span class="p">}</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">expressions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="s">&quot;[&amp;, [&amp;, 1, [!, 0]], [|, [|, 1, 0], [!, 1]]]&quot;</span>
-<span class="w">    </span><span class="p">};</span>
-<span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">results</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">circuitsOutput</span><span class="p">(</span><span class="n">expressions</span><span class="p">);</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">results</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w">  </span><span class="c1">// Output: 1</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">unite</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="n">a</span><span class="p">);</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">size_</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size_</span><span class="p">[</span><span class="n">b</span><span class="p">])</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">swap</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+<span class="w">        </span><span class="n">parent_</span><span class="p">[</span><span class="n">b</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="w">        </span><span class="n">size_</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">size_</span><span class="p">[</span><span class="n">b</span><span class="p">];</span>
+<span class="w">        </span><span class="o">--</span><span class="n">comps_</span><span class="p">;</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">size_</span><span class="p">[</span><span class="n">find</span><span class="p">(</span><span class="n">x</span><span class="p">)];</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">components</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">comps_</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">parent_</span><span class="p">,</span><span class="w"> </span><span class="n">size_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">comps_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<hr />
+<h2 id="patterns-uses">Patterns &amp; Uses<a class="headerlink" href="#patterns-uses" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Idea</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Connectivity</td>
+<td>Merge edges, query connected</td>
+<td>Graph components</td>
+</tr>
+<tr>
+<td>Cycle Detection</td>
+<td>If unite fails -&gt; cycle</td>
+<td>Undirected graph</td>
+</tr>
+<tr>
+<td>Kruskal MST</td>
+<td>Sort edges by weight, union</td>
+<td>Minimum spanning tree</td>
+</tr>
+<tr>
+<td>Count Components</td>
+<td>Track <code>comps</code> after unions</td>
+<td>Number of islands (grid union)</td>
+</tr>
+<tr>
+<td>Grouping</td>
+<td>Merge equivalent relations</td>
+<td>Accounts merge</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="kruskal-skeleton">Kruskal Skeleton<a class="headerlink" href="#kruskal-skeleton" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">Edge</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">;</span><span class="w"> </span><span class="p">};</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">kruskal</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Edge</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">edges</span><span class="p">){</span>
+<span class="w">    </span><span class="n">sort</span><span class="p">(</span><span class="n">edges</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">edges</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="p">[](</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">){</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">w</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">w</span><span class="p">;</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="n">DSU</span><span class="w"> </span><span class="n">d</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">cost</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="k">for</span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">e</span><span class="o">:</span><span class="w"> </span><span class="n">edges</span><span class="p">){</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">d</span><span class="p">.</span><span class="n">unite</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">u</span><span class="p">,</span><span class="n">e</span><span class="p">.</span><span class="n">v</span><span class="p">))</span><span class="w"> </span><span class="n">cost</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">w</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">cost</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
+<hr />
+<h2 id="classic-problems">Classic Problems<a class="headerlink" href="#classic-problems" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Concept</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of Provinces</td>
+<td>Connectivity</td>
+<td>https://leetcode.com/problems/number-of-provinces/</td>
+</tr>
+<tr>
+<td>Redundant Connection</td>
+<td>Cycle detection</td>
+<td>https://leetcode.com/problems/redundant-connection/</td>
+</tr>
+<tr>
+<td>Accounts Merge</td>
+<td>Grouping</td>
+<td>https://leetcode.com/problems/accounts-merge/</td>
+</tr>
+<tr>
+<td>Satisfiability of Equality Equations</td>
+<td>Union rel eqs</td>
+<td>https://leetcode.com/problems/satisfiability-of-equality-equations/</td>
+</tr>
+<tr>
+<td>Min Cost to Connect Points</td>
+<td>MST (Kruskal/Prim)</td>
+<td>https://leetcode.com/problems/min-cost-to-connect-all-points/</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pitfalls">Pitfalls<a class="headerlink" href="#pitfalls" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Forgetting path compression (performance degrade)</li>
+<li>Union by value not representative (duplicate parents)</li>
+<li>Mishandling 1-based vs 0-based indexing</li>
+<li>Not tracking component count for queries</li>
+<li>Using recursion in deep trees without compression (stack risk)</li>
+</ul>
+<hr />
+<h2 id="interview-checklist">Interview Checklist<a class="headerlink" href="#interview-checklist" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Consider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Universe Size</td>
+<td>Need to map strings -&gt; ids?</td>
+</tr>
+<tr>
+<td>Operations Count</td>
+<td>Heavy queries -&gt; optimize find</td>
+</tr>
+<tr>
+<td>Extra Data</td>
+<td>Track size / rank / metadata?</td>
+</tr>
+<tr>
+<td>Dynamic Add</td>
+<td>Need union-find with map for new keys?</td>
+</tr>
+<tr>
+<td>Use Case</td>
+<td>Might BFS/DFS be simpler?</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="further-reading">Further Reading<a class="headerlink" href="#further-reading" title="Permanent link">&para;</a></h2>
+<ul>
+<li>https://cp-algorithms.com/data_structures/disjoint_set_union.html</li>
+<li>https://en.wikipedia.org/wiki/Disjoint-set_data_structure</li>
+</ul>
+<hr />
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../graphs/">Graphs</a></li>
+<li><a href="../heaps_priority_queues/">Heaps &amp; Priority Queues</a></li>
+<li><a href="../segment_fenwick_trees/">Segment &amp; Fenwick Trees</a></li>
+</ul>
+<hr />
+<p><em>DSU offers almost O(1) merges—perfect for large-scale connectivity queries.</em></p>
 
 
 
@@ -2146,12 +2209,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../../assets/custom.js"></script>
+        <script src="../../assets/custom.js"></script>
       
     
   </body>
