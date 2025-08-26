@@ -274,8 +274,30 @@ html[data-md-color-scheme='slate'] .difficulty-Hard { background:#7f1d1d; color:
 /* Filter bar styling tweaks */
 input#filter-text:focus, select#filter-diff:focus { outline:2px solid #3f51b5; }
 html[data-md-color-scheme='slate'] input#filter-text, html[data-md-color-scheme='slate'] select#filter-diff { background:#1e293b; color:#e2e8f0; border-color:#374151; }
-/* Status coloring */
-.status-cell { font-size:.65rem; font-weight:600; padding:4px 8px; border-radius:14px; cursor:pointer; text-align:center; }
+/* Status pill styling */
+.status-cell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 96px;
+  height: 36px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 18px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color .18s ease, color .18s ease, transform .12s ease;
+}
+
+@media (max-width: 520px) {
+  .status-cell { min-width: 72px; height: 30px; font-size: .72rem; padding: 0 8px; }
+}
+
 .status-unseen { background:#e2e8f0; color:#475569; }
 .status-attempted { background:#fef9c3; color:#92400e; }
 .status-solved { background:#dcfce7; color:#166534; }
